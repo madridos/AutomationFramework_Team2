@@ -1,0 +1,111 @@
+-------------------------------------------------------------------------------
+Test set: testtmobile.TMobileHomePageTest
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 7, Errors: 0, Skipped: 16, Time elapsed: 100.885 s <<< FAILURE! - in testtmobile.TMobileHomePageTest
+testtmobile.TMobileHomePageTest.testLogo  Time elapsed: 10.103 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#digital-header-logo-img"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\fsidi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: de25463390554ab2d3a52b60af32cac3
+*** Element info: {Using=css selector, value=#digital-header-logo-img}
+	at testtmobile.TMobileHomePageTest.testLogo(TMobileHomePageTest.java:30)
+
+testtmobile.TMobileHomePageTest.testTmobileHomePageTitle  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [Unlimited Plans, Cell Phones, Evolving 4G & 5G Coverage | T-Mobile] but found [Google]
+	at testtmobile.TMobileHomePageTest.testTmobileHomePageTitle(TMobileHomePageTest.java:36)
+
+testtmobile.TMobileHomePageTest.testMouseHoverPlansWebElement  Time elapsed: 10.068 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at testtmobile.TMobileHomePageTest.testMouseHoverPlansWebElement(TMobileHomePageTest.java:41)
+Caused by: java.lang.reflect.InvocationTargetException
+	at testtmobile.TMobileHomePageTest.testMouseHoverPlansWebElement(TMobileHomePageTest.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#digital\-header\-nav\-link\-head\-0"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\fsidi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f9ed48ea5daad92e575aa270160d2ec4
+*** Element info: {Using=id, value=digital-header-nav-link-head-0}
+	at testtmobile.TMobileHomePageTest.testMouseHoverPlansWebElement(TMobileHomePageTest.java:41)
+
+testtmobile.TMobileHomePageTest.testPlansListWebElements  Time elapsed: 10.055 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at testtmobile.TMobileHomePageTest.testPlansListWebElements(TMobileHomePageTest.java:47)
+Caused by: java.lang.reflect.InvocationTargetException
+	at testtmobile.TMobileHomePageTest.testPlansListWebElements(TMobileHomePageTest.java:47)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#digital\-header\-nav\-link\-head\-0"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\fsidi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 450681c526e3d85e0c9102822cebaef2
+*** Element info: {Using=id, value=digital-header-nav-link-head-0}
+	at testtmobile.TMobileHomePageTest.testPlansListWebElements(TMobileHomePageTest.java:47)
+
+testtmobile.TMobileHomePageTest.testMouseHoverPhoneAndDevicesWebElement  Time elapsed: 10.017 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at testtmobile.TMobileHomePageTest.testMouseHoverPhoneAndDevicesWebElement(TMobileHomePageTest.java:52)
+Caused by: java.lang.reflect.InvocationTargetException
+	at testtmobile.TMobileHomePageTest.testMouseHoverPhoneAndDevicesWebElement(TMobileHomePageTest.java:52)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#digital\-header\-nav\-link\-head\-1"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\fsidi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fd8345f5253fa296b6105e9bb5d0d398
+*** Element info: {Using=id, value=digital-header-nav-link-head-1}
+	at testtmobile.TMobileHomePageTest.testMouseHoverPhoneAndDevicesWebElement(TMobileHomePageTest.java:52)
+
+testtmobile.TMobileHomePageTest.testPhoneAndDevicesWebElements  Time elapsed: 5.407 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at testtmobile.TMobileHomePageTest.testPhoneAndDevicesWebElements(TMobileHomePageTest.java:59)
+Caused by: java.lang.reflect.InvocationTargetException
+	at testtmobile.TMobileHomePageTest.testPhoneAndDevicesWebElements(TMobileHomePageTest.java:59)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using id=digital-header-nav-link-head-1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at testtmobile.TMobileHomePageTest.testPhoneAndDevicesWebElements(TMobileHomePageTest.java:59)
+
+testtmobile.TMobileHomePageTest.afterEachTestMethod  Time elapsed: 17.473 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=83.0.4103.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-HBTIMHQ5', ip: '192.168.27.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\fsidi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4b3567d32dc2f679ec8c7036555eee81
+
