@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: homePageTest.TestHomePage
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 3.777 s <<< FAILURE! - in homePageTest.TestHomePage
+homePageTest.TestHomePage.setUp  Time elapsed: 2.229 s  <<< FAILURE!
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+
+homePageTest.TestHomePage.cleanUp  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.NullPointerException
+

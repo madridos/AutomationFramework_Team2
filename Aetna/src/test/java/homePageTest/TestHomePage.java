@@ -13,11 +13,14 @@ public class TestHomePage extends WebAPI {
     HomePage homepage = PageFactory.initElements(driver,HomePage.class);
 //        driver.findElement(By.xpath("aetnaLoginButtonXp")).click();
 
-
+    //Test case execution ?
 
     @Test
     public void testClickLogin(){
+        String aetnaURL= " https://www.aetnamedicare.com/";
+        driver.get(aetnaURL);
 
+        homepage.loginToaetna();
 
 
     }
