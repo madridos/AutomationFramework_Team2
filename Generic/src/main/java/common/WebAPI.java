@@ -83,7 +83,7 @@ public class WebAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-        driver.quit();
+//        driver.quit();
     }
 
     @AfterSuite
@@ -121,8 +121,8 @@ public class WebAPI {
         } else {
             getLocalDriver(os, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
     }
@@ -190,8 +190,8 @@ public class WebAPI {
 
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
-        //driver.close();
-        driver.quit();
+        driver.close();
+       driver.quit();
     }
 
     //helper methods
