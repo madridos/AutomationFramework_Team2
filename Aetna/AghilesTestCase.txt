@@ -1,0 +1,33 @@
+
+
+    Test case 1:"Stay informed about coronavirus" title.
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:Click on Individuals.
+          step 3:Make sure that white box title  is available.
+          step 4:Close browser
+
+    Test case 2: Get coronavirus facts.
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:Click on coronavirus facts.
+          step 3:Get title.
+          atep 4: close browser.
+
+    Test case 3:Aetna Medicare.
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:Click on Aetna Medicare.
+          step 3: close browser.
+
+    Test case 4:Apple watch and phone with app image
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:check "Apple watch and phone with app image" are availabe.
+          step 3:close browser.
+
+    Test case 5:Download Attain.
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:click on Download Attain.
+          step 3:close browser.
+
+    Test case 6:Register abd log in today
+          step 1:Open browser and navigate to "https://www.aetna.com/".
+          step 2:Click on Register abd log in today.
+          step 3:Close browser.
