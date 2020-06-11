@@ -1,0 +1,102 @@
+fouad's test cases
+  header:
+  testcase1: aetna logo
+  steps: 1-navigate to : https://www.aetna.com/
+         2- user should see the logo of aetna
+         3- when user clicks on logo it should redirect it to home page
+         4- the color should be  #414141 hex color
+
+test case2: login button
+      step:     1-navigate to : https://www.aetna.com/
+                2- click on login button to navigate to login page
+
+ test case 3: contact us feature (right side header)
+      steps: 1-navigate to : https://www.aetna.com/
+             2-click on "contact us" feature and navigate to "contact us" page
+             3- check the title of "contact us" page which should be "Contact Us | Aetna"
+
+
+
+
+ test case4: language feature(english and spanish)
+ steps: 1-navigate to : https://www.aetna.com/
+        2-click on espagnol(the whole page will be translated to spanish)
+        3-check the title when it's in spanish
+        4-click on english(the whole page will be translated to english)
+        5-check the title when it's in english"Health Insurance Plans | Aetna"
+
+
+    test case5: search(field) feature
+    steps: 1-navigate to : https://www.aetna.com/
+           2-search text in the field
+           3- click on search loop function
+
+     test case 6 : explore aetna site dropdown menu
+           steps: 1-navigate to : https://www.aetna.com/
+                  2- when you click on it it should drop a menu
+
+test case7: who we are feature:
+steps:  1-navigate to : https://www.aetna.com/
+        2-when you click on it it should drop a menu
+
+test case 8: initiatives feature:
+steps: 1-navigate to : https://www.aetna.com/
+        2-when you click on it it should drop a menu
+
+test case 9: investors feature
+
+steps: 1-navigate to : https://www.aetna.com/
+        2-when you click on it it should drop a menu
+test case 10: health section feature:
+steps: 1-navigate to : https://www.aetna.com/
+        2-when you click on it it should drop a menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  nordin's test cases:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

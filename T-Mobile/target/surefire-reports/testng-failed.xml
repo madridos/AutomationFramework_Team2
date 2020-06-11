@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="testtmobile.TMobileHomePageTest">
+        <methods>
+          <include name="testMouseHoverPlansWebElement"/>
+          <include name="afterEachTestMethod"/>
+          <include name="testTvbutton"/>
+          <include name="setUp"/>
+          <include name="testTvTitle"/>
+          <include name="testvalidatebusineesButton"/>
+          <include name="testLogo"/>
+          <include name="testMouseHoverPhoneAndDevicesWebElement"/>
+          <include name="testTmobileHomePageTitle"/>
+          <include name="startExtent"/>
+          <include name="cleanUp"/>
+          <include name="testPhoneAndDevicesWebElements"/>
+          <include name="extentSetup"/>
+          <include name="testPlansListWebElements"/>
+          <include name="testSearchButton"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- testtmobile.TMobileHomePageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
