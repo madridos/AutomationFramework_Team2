@@ -18,9 +18,13 @@
     <test name="T-Mobile Home">
         <classes>
 
+                        <class name="testcoverage.CoveragePageTest"></class>
+
+
                        <class name="myaccounttest.MyAccountTest"></class>
 
                      <class name="testtmobile.TMobileHomePageTest"></class>
+
 
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
