@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="T-Mobile Automation Script" verbose="2" parallel="false">
+<suite name="--T-Mobile Automation Script" verbose="2" parallel="false">
     <!--        <parameter name="useCloudEnv" value="true"/>-->
     <!--&lt;!&ndash;        <parameter name="cloudEnvName" value="browserstack"/>&ndash;&gt;-->
     <!--    <parameter name="cloudEnvName" value="saucelab"/>-->
@@ -28,18 +28,18 @@
     <parameter name="url" value="https://www.t-mobile.com/"/>
 
 
-    <test name="T-Mobile Home">
+    <test name="T-MobilContact">
         <classes>
 
-                        <class name="tmobilePlansTest.plansPageTest"></class>
+                        <!--class name="tmobilePlansTest.plansPageTest"></class>-->
 
 
                         <class name="testcoverage.CoveragePageTest"></class>
 
 
-                       <class name="myaccounttest.MyAccountTest"></class>
+                       <!--class name="myaccounttest.MyAccountTest"></class>-->
 
-                     <class name="testtmobile.TMobileHomePageTest"></class>
+                     <!--class name="testtmobile.TMobileHomePageTest"></class>-->
 
 
 

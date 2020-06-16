@@ -134,6 +134,7 @@ public class WebAPI {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "..\\Generic\\BrowserDriver\\windows\\chromedriver.exe");
+               // System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("chrome-options")) {
@@ -143,6 +144,7 @@ public class WebAPI {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+                //System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -188,9 +190,9 @@ public class WebAPI {
         return driver;
     }
 
-    @AfterMethod(alwaysRun = true)
+   @AfterMethod(alwaysRun = true)
     public void cleanUp() {
-        driver.close();
+       driver.close();
        driver.quit();
     }
 

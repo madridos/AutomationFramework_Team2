@@ -2,28 +2,42 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Airbnb Automation Script" verbose="2" parallel="false">
+<suite name="airbnb Automation Script" verbose="2" parallel="false">
     <!--        <parameter name="useCloudEnv" value="true"/>-->
     <!--&lt;!&ndash;        <parameter name="cloudEnvName" value="browserstack"/>&ndash;&gt;-->
     <!--    <parameter name="cloudEnvName" value="saucelab"/>-->
-    <!--        <parameter name="os" value="windows"/>-->
-    <parameter name="os" value="OS X"/>
-    <!--        <parameter name="os_version" value="10"/>-->
-    <parameter name="os_version" value="Catalina"/>
+
+
+<!--    **************** Mac *********************-->
+    <!--    <parameter name="os" value="OS X"/>-->
+    <!--    <parameter name="os_version" value="Catalina"/>-->
+
+
+    <!--    **************** Windows *********************-->
+
+    <parameter name="os" value="windows"/>
+    <parameter name="os_version" value="10"/>
+
+        <parameter name="os" value="windows"/>
+  <!--  <parameter name="os" value="OS X"/>-->
+          <parameter name="os_version" value="10"/>
+    <!--<parameter name="os_version" value="Catalina"/>-->
+
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="83"/>
     <parameter name="url" value="https://www.airbnb.com/"/>
 
 
-    <test name="Airbnb Home">
+    <test name="rbnbTest">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
+
+
+
+
+            <class name="testairbnbHomePage.airbnbTestHomePageTest"></class>
+
+
+
 
 
         </classes>
