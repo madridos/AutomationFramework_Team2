@@ -113,7 +113,7 @@ public class CoveragePageTest extends WebAPI   {
         covtest.feadback();
     }
 
-    //mamine-------------
+
     //@Test(priority = 9)
     public void support() throws InterruptedException {
         initElement();
@@ -164,7 +164,7 @@ public class CoveragePageTest extends WebAPI   {
         covtest.openContact();
     }
 
-   // @Test(priority = 14)
+    @Test(priority = 14)
     public void clickchekitout() throws InterruptedException {
         initElement();
         covtest.openContact();
