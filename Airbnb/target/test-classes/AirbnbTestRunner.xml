@@ -17,7 +17,7 @@
 
     <test name="Airbnb Home">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
+                    <class name="testairbnbHomePage.airbnbTestHomePageTest"></class>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

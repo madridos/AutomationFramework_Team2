@@ -131,10 +131,12 @@ public class WebAPI {
 
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+               // System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             } else if (OS.equalsIgnoreCase("Windows")) {
-               // System.setProperty("webdriver.chrome.driver", "..\\Generic\\BrowserDriver\\windows\\chromedriver.exe");
-                System.setProperty("webdriver.chrome.driver", "..C:\\Users\\mokraoui\\Desktop\\dr.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+
+
 
             }
             driver = new ChromeDriver();
