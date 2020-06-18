@@ -25,6 +25,13 @@
             <artifactId>rest-assured</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured-all -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured-all</artifactId>
+
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
         <dependency>
             <groupId>com.github.scribejava</groupId>
@@ -75,7 +82,22 @@
             <artifactId>json-simple</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>xml-path</artifactId>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+        </dependency>
 
 
     </dependencies>
