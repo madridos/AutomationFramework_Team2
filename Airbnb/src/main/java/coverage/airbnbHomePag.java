@@ -1,6 +1,7 @@
 package coverage;
 import common.WebAPI;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -23,6 +24,7 @@ import java.util.List;
 import static coverage.WebElementCoverage.*;
 
 public class airbnbHomePag extends WebAPI {
+
 
     DataReader excel = new DataReader();
 
@@ -169,20 +171,39 @@ public class airbnbHomePag extends WebAPI {
 
     public void excel() throws InterruptedException, IOException {
 
+        // Excel location
         String path = ("C:\\Users\\mokraoui\\Desktop\\airbnbTest.xlsx");
 
-        FileInputStream fs = new FileInputStream(path);
+        //passing the path to file object
+        File file = new File(path);
+        // passing file object to fileinputstream
+        FileInputStream fis = new FileInputStream(file);
+        // creating XSSWORKBOOK OBJECT
+        XSSFWorkbook wb=new XSSFWorkbook(fis);
+        // creating WORSHEET OBJECT
+        XSSFSheet sheet1=wb.getSheetAt(0);
+        // CREATING INT VARIABLE TO SAVE ROWCOUNT
+        int rowcount=sheet1.getLastRowNum();
+        // PRINT TOTAL ROM
+        System.out.println("Total Row" + rowcount);
+        // LOOPING IN THE EXCEL SHEET
+        for(int i=0;i<rowcount+1;i++) {
+            System.out.println(i);
+            //GET CELL
+            Cell cell1 = sheet1.getRow(i).getCell(0);
+            //SET AS STRING TYPE
+            cell1.setCellType(Cell.CELL_TYPE_STRING);
+            String data0= cell1.getStringCellValue();
+            // PRINT CELL
+            System.out.println("Test Data From Excel : "+data0);
+        }
 
+        wb.close();
+    }
 
-        // Load workbook
-        XSSFWorkbook wb = new XSSFWorkbook(fs);
-
-        // Load sheet- Here we are loading first sheetonly
-        XSSFSheet sh = wb.getSheetAt(0);
-        System.out.println(sh.getRow(0).getCell(0).getStringCellValue());
 
 
 
 
     }
-}
+

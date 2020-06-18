@@ -67,7 +67,6 @@ public class airbnbTestHomePageTest extends WebAPI {
         Thread.sleep(4000);
         airbnbtest.ClickPrice();
         Thread.sleep(4000);
-
         airbnbtest.setEnterprice();
 
     }
@@ -163,9 +162,9 @@ public class airbnbTestHomePageTest extends WebAPI {
 
     }
 
-    @Test(priority = 13)
-    public void exxceel() throws InterruptedException, IOException {
-        initElement();
+    @Test(priority = 14)
+    public void excel() throws InterruptedException, IOException {
+      ///  initElement();
 
         airbnbtest.excel();
 
