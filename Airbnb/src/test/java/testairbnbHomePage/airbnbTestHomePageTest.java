@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class airbnbTestHomePageTest extends WebAPI {
 
@@ -51,7 +53,9 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.clickShareall();
     }
     //@Test(priority = 4)
-    public void Hostyourhome () throws InterruptedException {
+    public void Hostyourhome () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+
+
         initElement();
         Thread.sleep(400);
         airbnbtest.ClickonlineExpriaces();
@@ -59,8 +63,11 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.clickHostyourhome();
     }
 
-   // @Test(priority = 5)
-    public void PRICE () throws InterruptedException {
+  //  @Test(priority = 5)
+    public void PRICE () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+        airbnbtest.connectToSqlDatabase();
+        airbnbtest.queryDB();
+
         initElement();
         Thread.sleep(400);
         airbnbtest.ClickonlineExpriaces();
@@ -70,8 +77,10 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.setEnterprice();
 
     }
-   // @Test(priority = 6)
-    public void PRICEMAX () throws InterruptedException {
+   @Test(priority = 6)
+    public void PRICEMAX () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+        airbnbtest.connectToSqlDatabase();
+        airbnbtest.queryDB();
         initElement();
         Thread.sleep(400);
         airbnbtest.ClickonlineExpriaces();
@@ -162,11 +171,24 @@ public class airbnbTestHomePageTest extends WebAPI {
 
     }
 
-    @Test(priority = 14)
+   // @Test(priority = 14)
     public void excel() throws InterruptedException, IOException {
       ///  initElement();
 
         airbnbtest.excel();
+
+    }
+
+   // @Test(priority = 14)
+    public void connectDB() throws Exception {
+        ///  initElement();
+
+        airbnbtest.loadProperties();
+        airbnbtest.connectToSqlDatabase();
+        airbnbtest.queryDB();
+
+
+
 
     }
 
