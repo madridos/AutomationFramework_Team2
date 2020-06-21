@@ -16,9 +16,10 @@
 
 
     <test name="T-Mobile Home">
+
         <classes>
                      <class name="testtmobile.TMobileHomePageTest"></class>
-            <!--            <class name="home.TestHomePage"/>-->
+                       <class name="testtmobile.TestTmobileBrokenLinks"/>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

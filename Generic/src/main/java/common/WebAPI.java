@@ -88,7 +88,7 @@ public class WebAPI {
 
     @AfterSuite
     public void generateReport() {
-        extent.close();
+       extent.close();
     }
 
 
@@ -121,8 +121,8 @@ public class WebAPI {
         } else {
             getLocalDriver(os, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
     }
@@ -158,6 +158,12 @@ public class WebAPI {
             driver = new InternetExplorerDriver();
         }
         return driver;
+    }
+    // Generic method for mouseHover:
+    public void mouseHoverWebElement(WebElement webElement) throws InterruptedException {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(webElement).build().perform();
+        Thread.sleep(3000);
     }
 
 

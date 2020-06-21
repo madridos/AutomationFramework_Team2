@@ -4,8 +4,8 @@ import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -95,4 +95,42 @@ public class DataReader {
         fio.close();
         wb.close();
     }
-}
+
+
+
+
+
+
+
+    // method to get data from excel
+    static Workbook book;
+    static Sheet sheet1;
+    public static String path="src\\main\\java\\testData\\loginToAirbnb.xlsx";
+
+    public static Object[][] fileReader3(String sheetName) throws IOException, InvalidFormatException {
+//      String[][] data1 = {};
+        File file = new File(path);
+
+        book = WorkbookFactory.create(file);
+        sheet1 = book.getSheet(sheetName);
+//        numberOfRows = sheet.getLastRowNum();
+//        numberOfCol = sheet.getRow(0).getLastCellNum();
+
+        Object[][] data1 = new Object[sheet1.getLastRowNum()][sheet1.getRow(0).getLastCellNum()];
+
+        for (int i = 0; i < sheet1.getLastRowNum(); i++) {
+            // HSSFRow rows = sheet.getRow(i);
+            for (int j = 0; j < sheet1.getRow(0).getLastCellNum(); j++) {
+                // HSSFCell cell = rows.getCell(j);
+                //String cellData = getCellValue(cell);
+                data1[i][j] = sheet1.getRow(i + 1).getCell(j).toString();
+                //System.out.println(cellData);
+            }
+
+        }
+
+        return data1;
+
+
+    }
+    }
