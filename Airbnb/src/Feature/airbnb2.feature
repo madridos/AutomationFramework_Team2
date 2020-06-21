@@ -1,0 +1,13 @@
+
+# cucumber test
+Feature: navigate airbnb
+
+  Scenario: airbnb open as expected
+    Given Online Experiences
+    When User Navigate to LogIn Page
+    And User enters UserName and Password
+   Then Message displayed Login Successfully
+
+ # Scenario: Successful LogOut
+  #  When User LogOut from the Application
+  #  Then Message displayed LogOut Successfully

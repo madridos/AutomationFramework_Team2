@@ -25,13 +25,15 @@ public class ContactSupportPage extends WebAPI {
     @FindBy(how= How.XPATH,using=webelementconntactsupport)
     public WebElement contactsupoortbutton;
 
-
-
-
+    public void supoortbutton(){
+        contactsupoortbutton.click();
+    }
 
     @FindBy(how= How.XPATH,using=Click1T800)
     public WebElement openT800;
-
+    public void opent800(){
+        openT800.click();
+    }
 
     @FindBy(how= How.XPATH,using=Checkorderstatus)
     public WebElement Orderstatus;

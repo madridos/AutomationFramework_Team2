@@ -17,7 +17,7 @@
 
     <test name="Citi_Bank Home">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
+                       <class name="testruner.testruner"></class>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

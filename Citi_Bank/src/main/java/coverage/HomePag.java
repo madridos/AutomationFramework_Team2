@@ -1,13 +1,7 @@
 package coverage;
-import common.WebAPI;
 
-import databases.User;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+import common.WebAPI;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -16,10 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeSuite;
+//import sun.jvm.hotspot.utilities.Assert;
 import utility.DataReader;
 
 import java.io.File;
@@ -27,15 +18,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 
 import static coverage.WebElementCoverage.*;
 
-public class airbnbHomePag extends WebAPI {
+public class HomePag extends WebAPI {
 
     public static Connection connect = null;
     public static Statement statement = null;
@@ -47,149 +35,177 @@ public class airbnbHomePag extends WebAPI {
     public static  String data0;
     public static  String data1;
 
-    @FindBy(how = How.XPATH, using = onlineExpriaces)
-    public WebElement ClickonlineExpriaces;
+    @FindBy(how = How.XPATH, using = opeencreditCard )
+    public WebElement CreditCard;
 
-    public  void ClickonlineExpriaces() {
-        ClickonlineExpriaces.click();
+    public  void Clickcreeditcard() {
+
+        CreditCard.click();
     }
 
-    @FindBy(how = How.XPATH, using = date)
-    public WebElement Clickdate;
+    @FindBy(how = How.XPATH, using = viewcreditcard)
+    public WebElement viewcreditcards;
 
-    public void Clickdate() {
-        Clickdate.click();
+    public void viewcards() {
+
+
+        viewcreditcards.click();
     }
 
-    @FindBy(how = How.XPATH, using = Price)
-    public WebElement ClickPrice;
+    @FindBy(how = How.XPATH, using = apr)
+    public WebElement APRS;
 
-    public void ClickPrice()
-    {
+    public void APRS() {
+        String act = "0% Intro APR Credit Cards";
+        String exp =APRS.getText();
+        if (act == exp) {
 
 
-        ClickPrice.click();
-    }
-
-    @FindBy(how = How.XPATH, using = Shareall)
-    public WebElement clickShareall;
-
-    public void clickShareall() {
-        clickShareall.click();
-    }
-
-    @FindBy(how = How.XPATH, using = Hostyourhome)
-    public WebElement clickHostyourhome;
-
-    public void clickHostyourhome() {
-        clickHostyourhome.click();
-    }
-
-    @FindBy(how = How.XPATH, using = enterprice)
-    public WebElement enterpriceN;
-
-    public void setEnterprice() throws InterruptedException {
-        enterpriceN.click();
-        enterpriceM.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-        Thread.sleep(200);
-        enterpriceN.sendKeys(min);
-    }
-
-    @FindBy(how = How.XPATH, using = enterpricemax)
-    public WebElement enterpriceM;
-
-    public void setEnterpriceMAX() throws InterruptedException {
-        enterpriceM.click();
-        enterpriceM.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-        Thread.sleep(200);
-        enterpriceM.sendKeys(max);
-    }
-
-    @FindBy(how = How.CSS, using = Clicksave)
-    public WebElement clicksave;
-
-    public void cSave() {
-        clicksave.click();
-    }
-
-    @FindBy(how = How.XPATH, using = clcikDay)
-    public WebElement clickDay;
-
-    public void clickDay() throws InterruptedException {
-        clickDay.click();
-    }
-
-    @FindBy(how = How.XPATH, using = morningbox)
-    public WebElement mornigcheckbox;
-
-    public void mornigcheckbox() throws InterruptedException {
-
-        if (mornigcheckbox.isSelected()) {
-
-            System.out.println("Checbox is selected");
-        } else {
-            mornigcheckbox.click();
+            APRS.click();
+            System.out.println("Test Passed ");
         }
-    }
-
-    @FindBy(how = How.XPATH, using = date)
-    public WebElement selectdate;
-
-    public void selectdate() {
-
-        try {
-            String xpath = "//*[@id=\"filter-menu-chip-group\"]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/table";
-            List<WebElement> allDates = driver.findElements(By.xpath(xpath));
-
-            for (WebElement num : allDates) {
-
-                String date = num.getText();
-                System.out.println(date);
-
-                if (date.equalsIgnoreCase(data0)) {
-                    num.click();
-                    break;
-                }
-
+            else{
+                System.out.println("Test Passed ");
             }
-        } catch (Exception e) {
-            System.out.println("This IS THE ERROR" + e);
+
         }
-    }
 
-    @FindBy(how = How.XPATH, using = openimage)
+    @FindBy(how = How.XPATH, using = balance)
+    public WebElement balances;
 
-    public WebElement imageselect;
+    public void vbalances() {
 
-    public void findimage() throws InterruptedException {
-        imageselect.click();
+        if ( balances.isEnabled()){
+           System.out.println("Balance enabled");
+       }else {
+           System.out.println("Balance is not enabled");
+       }
 
-    }
-
-    @FindBy(how = How.XPATH, using = getimage)
-
-    public WebElement getimageS;
-
-    public void getimageS() throws InterruptedException {
-        String imagename = getimageS.getTagName();
-        System.out.println("Imagename =" + imagename);
 
     }
 
+    @FindBy(how = How.XPATH, using = cach)
+    public WebElement Bankcach;
 
-    @FindBy(how = How.XPATH, using = gDropArow)
-
-    public WebElement clickarrow;
-
-    public void clickarrow() throws InterruptedException {
-
-        Actions actions = new Actions(driver);
-        actions.moveToElement(clickarrow).build().perform();
-        clickarrow.click();
+    public void Bankcach() {
+try {
+    if (Bankcach.isDisplayed()) {
+        Bankcach.click();
+        System.out.println("Test passed");
+    } else {
+        System.out.println("Bankcach not found ");
+    }
+}catch (Exception e){
+    System.out.println(e);
+}
 
     }
 
-    // Reading Excel:
+
+    @FindBy(how = How.XPATH, using = reward)
+    public WebElement Bankreward;
+
+    public void Bankreward() {
+        String EXP ="Rewards Credit Cards";
+        String validation = Bankreward.getText();
+        System.out.println(validation);
+
+        switch (validation) {
+            case "Rewards Credit Cards":
+                System.out.println("Test Passed");
+                break;
+            case "Rewards Credit Card":
+                System.out.println("Test failed");
+                break;
+        }
+
+
+
+
+    }
+
+    @FindBy(how = How.XPATH, using = qualifieB)
+    public WebElement qualifieS;
+
+    public void qualifieS() {
+
+        if ( qualifieS.isSelected()){
+            System.out.println("qualifie enabled");
+        }else {
+            System.out.println("qualifie is not enabled");
+        }
+
+
+    }
+
+
+    @FindBy(how = How.XPATH, using = smallBusines)
+    public WebElement smallBusinesm;
+
+    public void smallBusinesm() {
+
+        String tag = smallBusinesm.getTagName();
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Print tag name 5 times"+ tag);
+        }
+
+    }
+
+    @FindBy(how = How.XPATH, using = username)
+    public WebElement enterusername;
+
+    public void enterusername() {
+
+        enterusername.sendKeys("MYUSERNAME");
+
+    }
+
+
+    @FindBy(how = How.XPATH, using = PW)
+    public WebElement enterPW;
+
+    public void enterPW() {
+
+        enterPW.sendKeys("MYPW");
+
+    }
+
+    @FindBy(how = How.XPATH, using = Clicknext)
+    public WebElement CLCIK_Clicknext;
+
+    public void CLCIK_Clicknext() {
+
+        CLCIK_Clicknext.click();
+
+    }
+
+    @FindBy(how = How.XPATH, using = forgetID)
+    public WebElement forgetIDS;
+
+    public void forgetIDS() {
+
+        if (forgetIDS.isEnabled()){
+            System.out.println("Testpassed");
+        }else {
+            System.out.println("Testpassed");
+        }
+
+
+
+    }
+
+    @FindBy(how = How.XPATH, using = ACIVECARD)
+    public WebElement ACIVECARDlink;
+
+    public void ACIVECARDlink() {
+
+        if (ACIVECARDlink.isEnabled()) {
+            System.out.println("Testpassed");
+        } else {
+            System.out.println("Testpassed");
+        }
+
+    }
 
     public void excel() throws InterruptedException, IOException {
 

@@ -14,6 +14,7 @@ public class airbnbTestHomePageTest extends WebAPI {
 
     static airbnbHomePag airbnbtest ;
 
+
     @BeforeSuite
     public void initElement(){
         // getLocalDriver("chrome","Windows");
@@ -27,7 +28,7 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.ClickonlineExpriaces();
     }
 
-  // @Test(priority = 1)
+  @Test(priority = 1)
     public void clickdate() throws InterruptedException {
         initElement();
         Thread.sleep(200);
@@ -77,7 +78,7 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.setEnterprice();
 
     }
-   @Test(priority = 6)
+   //@Test(priority = 6)
     public void PRICEMAX () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         airbnbtest.connectToSqlDatabase();
         airbnbtest.queryDB();
@@ -129,8 +130,10 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.mornigcheckbox();
     }
 
-    // @Test(priority = 10)
-    public void selectdate() throws InterruptedException {
+   //  @Test(priority = 10)
+    public void selectdate() throws InterruptedException, IOException {
+        airbnbtest.excel();
+
         initElement();
         Thread.sleep(200);
         airbnbtest.ClickonlineExpriaces();
@@ -171,7 +174,7 @@ public class airbnbTestHomePageTest extends WebAPI {
 
     }
 
-   // @Test(priority = 14)
+  // @Test(priority = 14)
     public void excel() throws InterruptedException, IOException {
       ///  initElement();
 
@@ -179,13 +182,25 @@ public class airbnbTestHomePageTest extends WebAPI {
 
     }
 
-   // @Test(priority = 14)
+   // @Test(priority = 15)
     public void connectDB() throws Exception {
         ///  initElement();
 
         airbnbtest.loadProperties();
         airbnbtest.connectToSqlDatabase();
         airbnbtest.queryDB();
+
+
+
+
+    }
+
+   // @Test(priority = 16)
+    public void cucumber() throws Exception {
+        // initElement();
+
+       // airbnbtest. user_Navigate_to_LogIn_Page();
+
 
 
 
