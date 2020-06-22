@@ -17,9 +17,7 @@
 
     <test name="Harford Home">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
-            <!--            <class name="home.TestHomePage"/>-->
-            <!--            <class name="home.TestHomePage"/>-->
+              <class name="Testruner.hartfordTestrunner"/>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

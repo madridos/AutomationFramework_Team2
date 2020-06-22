@@ -17,7 +17,7 @@
 
     <test name="Fox_News Home">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
+                     <class name="FTestRuner.foxtestRuner"></class>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
