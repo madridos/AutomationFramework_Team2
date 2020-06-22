@@ -79,7 +79,7 @@ public class testruner extends WebAPI {
         cityBank.smallBusinesm();
     }
 // test from here----------------------------
-    @Test(priority = 0)
+   // @Test(priority = 0)
     public void enterusername() throws InterruptedException {
         initElement();
 
@@ -87,7 +87,7 @@ public class testruner extends WebAPI {
         cityBank.enterusername();
     }
 
-   // @Test(priority = 0)
+   //@Test(priority = 0)
     public void enterPW() throws InterruptedException {
         initElement();
 
@@ -95,11 +95,11 @@ public class testruner extends WebAPI {
         cityBank.enterPW();
     }
 
-    //@Test(priority = 0)
+   // @Test(priority = 0)
     public void CLCIK_Clicknext() throws InterruptedException {
         initElement();
 
-        Thread.sleep(200);
+        Thread.sleep(2000);
         cityBank.CLCIK_Clicknext();
     }
 
@@ -163,7 +163,7 @@ public class testruner extends WebAPI {
         cityBank.OPENbankingview();
     }
 
-    //@Test(priority = 0)
+    @Test(priority = 0)
     public void OPENchecking()throws InterruptedException {
         initElement();
 

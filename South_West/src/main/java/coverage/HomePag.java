@@ -1,27 +1,19 @@
 package coverage;
 
 import common.WebAPI;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-//import sun.jvm.hotspot.utilities.Assert;
 import utility.DataReader;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.*;
-import java.util.List;
-import java.util.Properties;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 import static coverage.WebElementCoverage.*;
+
+//import sun.jvm.hotspot.utilities.Assert;
 
 public class HomePag extends WebAPI {
 
@@ -35,34 +27,36 @@ public class HomePag extends WebAPI {
     public static  String data0;
     public static  String data1;
 
-    @FindBy(how = How.XPATH, using = opeencreditCard )
-    public WebElement CreditCard;
+    @FindBy(how = How.XPATH, using = vacation )
+    public WebElement vacations;
 
-    public  void Clickcreeditcard() {
+    public  void vacationm() {
 
-        CreditCard.click();
+        vacations.click();
     }
 
-    @FindBy(how = How.XPATH, using = viewcreditcard)
-    public WebElement viewcreditcards;
+    @FindBy(how = How.XPATH, using = bookflight)
+    public WebElement bookflights;
 
-    public void viewcards() {
+    public void bookflightm() {
 
 
-        viewcreditcards.click();
+        String title= bookflights.getText();
+        System.out.println(title);
     }
 
-    @FindBy(how = How.XPATH, using = apr)
-    public WebElement APRS;
+    @FindBy(how = How.XPATH, using = routemap)
+    public WebElement routemaps;
 
-    public void APRS() {
-        String act = "0% Intro APR Credit Cards";
-        String exp =APRS.getText();
+    public void routemapm() {
+        String act = "Military";
+        String exp =routemaps.getText();
+        System.out.println(exp);
         if (act == exp) {
 
 
-            APRS.click();
-            System.out.println("Test Passed ");
+            routemaps.click();
+            System.out.println("zak Test Passed ");
         }
             else{
                 System.out.println("Test Passed ");
@@ -70,30 +64,32 @@ public class HomePag extends WebAPI {
 
         }
 
-    @FindBy(how = How.XPATH, using = balance)
-    public WebElement balances;
+    @FindBy(how = How.XPATH, using = flightschedule)
+    public WebElement flightschedules;
 
-    public void vbalances() {
+    public void flightschedulem() {
 
-        if ( balances.isEnabled()){
-           System.out.println("Balance enabled");
+        if ( flightschedules.isEnabled()){
+           System.out.println("beducation enabled");
        }else {
-           System.out.println("Balance is not enabled");
+           System.out.println("beducation is not enabled");
        }
 
 
     }
 
-    @FindBy(how = How.XPATH, using = cach)
-    public WebElement Bankcach;
 
-    public void Bankcach() {
+
+    @FindBy(how = How.XPATH, using = internationalTravel)
+    public WebElement internationalTravels;
+
+    public void internationalTravelm() {
 try {
-    if (Bankcach.isDisplayed()) {
-        Bankcach.click();
+    if (internationalTravels.isDisplayed()) {
+        internationalTravels.click();
         System.out.println("Test passed");
     } else {
-        System.out.println("Bankcach not found ");
+        System.out.println("terrors not found ");
     }
 }catch (Exception e){
     System.out.println(e);
@@ -102,12 +98,12 @@ try {
     }
 
 
-    @FindBy(how = How.XPATH, using = reward)
-    public WebElement Bankreward;
+    @FindBy(how = How.XPATH, using = flightoffers)
+    public WebElement flightofferss;
 
-    public void Bankreward() {
-        String EXP ="Rewards Credit Cards";
-        String validation = Bankreward.getText();
+    public void flightoffersm() {
+        String EXP ="  chnageme";
+        String validation = flightofferss.getText();
         System.out.println(validation);
 
         switch (validation) {
@@ -124,67 +120,67 @@ try {
 
     }
 
-    @FindBy(how = How.XPATH, using = qualifieB)
-    public WebElement qualifieS;
+    @FindBy(how = How.XPATH, using = lowfare)
+    public WebElement lowfareS;
 
-    public void qualifieS() {
+    public void lowfarem() {
 
-        if ( qualifieS.isSelected()){
-            System.out.println("qualifie enabled");
+        if ( lowfareS.isSelected()){
+            System.out.println("economyS enabled");
         }else {
-            System.out.println("qualifie is not enabled");
+            System.out.println("economyS is not enabled");
         }
 
 
     }
 
 
-    @FindBy(how = How.XPATH, using = smallBusines)
-    public WebElement smallBusinesm;
+    @FindBy(how = How.XPATH, using = upgrade)
+    public WebElement upgrades;
 
-    public void smallBusinesm() {
+    public void upgradem() {
 
-        String tag = smallBusinesm.getTagName();
+        String tag = upgrades.getTagName();
         for (int i = 0; i < 5; i++) {
             System.out.println("Print tag name 5 times"+ tag);
         }
 
     }
 
-    @FindBy(how = How.XPATH, using = username)
-    public WebElement enterusername;
+    @FindBy(how = How.XPATH, using = bookhotel)
+    public WebElement bookhotels;
 
-    public void enterusername() {
+    public void bookhotelm() {
 
-        enterusername.sendKeys("MYUSERNAME");
-
-    }
-
-
-    @FindBy(how = How.XPATH, using = PW)
-    public WebElement enterPW;
-
-    public void enterPW() {
-
-        enterPW.sendKeys("MYPW");
+        bookhotels.click();
 
     }
 
-    @FindBy(how = How.XPATH, using = Clicknext)
-    public WebElement CLCIK_Clicknext;
 
-    public void CLCIK_Clicknext() {
+    @FindBy(how = How.XPATH, using = morethanHotel)
+    public WebElement morethanHotels;
 
-        CLCIK_Clicknext.click();
+    public void morethanHotelm() {
+
+        morethanHotels.click();
 
     }
 
-    @FindBy(how = How.XPATH, using = forgetID)
-    public WebElement forgetIDS;
+    @FindBy(how = How.XPATH, using = managerreservation)
+    public WebElement managerreservations;
 
-    public void forgetIDS() {
+    public void managerreservationm() {
 
-        if (forgetIDS.isEnabled()){
+        managerreservations.click();
+
+    }
+
+    @FindBy(how = How.XPATH, using = hotelOffer)
+    public WebElement hotelOffers;
+
+    public void hotelOfferm() {
+
+        if (hotelOffers.isEnabled()){
             System.out.println("Testpassed");
         }else {
             System.out.println("Testpassed");
@@ -194,12 +190,12 @@ try {
 
     }
 
-    @FindBy(how = How.XPATH, using = ACIVECARD)
-    public WebElement ACIVECARDlink;
+    @FindBy(how = How.XPATH, using = baserate)
+    public WebElement baserates;
 
-    public void ACIVECARDlink() {
+    public void baseratem() {
 
-        if (ACIVECARDlink.isEnabled()) {
+        if (baserates.isEnabled()) {
             System.out.println("Testpassed");
         } else {
             System.out.println("Testpassed");
@@ -208,12 +204,12 @@ try {
     }
 
     /// ///////////////
-    @FindBy(how = How.XPATH, using = forgetPW)
-    public WebElement getforgetPW;
+    @FindBy(how = How.XPATH, using = rapidreward)
+    public WebElement rapidrewards;
 
-    public void getforgetPW() {
+    public void rapidrewards() {
 
-        if (getforgetPW.isDisplayed()) {
+        if (rapidrewards.isDisplayed()) {
             System.out.println("Testfailed");
         } else {
             System.out.println("Testpassed");
@@ -221,12 +217,12 @@ try {
 
     }
 
-    @FindBy(how = How.XPATH, using = REGISTERoNLINE)
-    public WebElement checkREGISTERoNLINE;
+    @FindBy(how = How.XPATH, using = whybook)
+    public WebElement whybooks;
 
-    public void checkREGISTERoNLINE() {
+    public void whybookm() {
 
-        if (checkREGISTERoNLINE.isDisplayed()) {
+        if (whybooks.isDisplayed()) {
             System.out.println("TestPASSED");
         } else {
             System.out.println("TestFAILED");
@@ -234,84 +230,85 @@ try {
 
     }
 
-    @FindBy(how = How.XPATH, using = REMEBREid)
-    public WebElement SELECTREMEBREid;
 
-    public void SELECTREMEBREid() {
+    @FindBy(how = How.XPATH, using = scarental)
+    public WebElement scarentals;
 
-        if (SELECTREMEBREid.isDisplayed()) {
-            SELECTREMEBREid.click();
-        } else {
-            System.out.println("TestFAILED");
-        }
+    public void scarentalm() {
 
-    }
-//THIS
-    @FindBy(how = How.XPATH, using = banking)
-    public WebElement OPENbanking;
-
-    public void OPENbanking() {
-
-        if (OPENbanking.isDisplayed()) {
-            OPENbanking.click();
+        if (scarentals.isDisplayed()) {
+            scarentals.click();
         } else {
             System.out.println("TestFAILED");
         }
 
     }
 
-    @FindBy(how = How.XPATH, using = bankingview)
-    public WebElement OPENbankingview;
+    @FindBy(how = How.XPATH, using =managereservation)
+    public WebElement managereservations;
 
-    public void OPENbankingview() {
+    public void managereservationm() {
 
-        if (OPENbankingview.isDisplayed()) {
-            OPENbankingview.click();
+        if (managereservations.isDisplayed()) {
+            managereservations.click();
         } else {
             System.out.println("TestFAILED");
         }
 
     }
 
-    @FindBy(how = How.XPATH, using = checking)
-    public WebElement OPENchecking;
+    @FindBy(how = How.XPATH, using = caroffers)
+    public WebElement carofferss;
 
-    public void OPENchecking() {
+    public void caroffersm() {
 
-        if (OPENchecking.isDisplayed()) {
-            OPENchecking.click();
+        if (carofferss.isDisplayed()) {
+            carofferss.click();
         } else {
             System.out.println("TestFAILED");
         }
 
     }
 
-    @FindBy(how = How.XPATH, using = saving)
-    public WebElement OPENsaving;
+    @FindBy(how = How.XPATH, using = bookvacation)
+    public WebElement bookvacations;
 
-    public void OPENsaving() {
+    public void bookvacationm() {
 
-        if (OPENsaving.isDisplayed()) {
-            OPENsaving.click();
+        if (bookvacations.isDisplayed()) {
+            bookvacations.click();
         } else {
             System.out.println("TestFAILED");
         }
 
     }
 
-    @FindBy(how = How.XPATH, using = certification)
-    public WebElement OPENcertification;
+    @FindBy(how = How.XPATH, using = managervacation)
+    public WebElement managervacations;
 
-    public void OPENcertification() {
+    public void managervacationm() {
 
-        if (OPENcertification.isDisplayed()) {
-            OPENcertification.click();
+        if (managervacations.isDisplayed()) {
+            managervacations.click();
         } else {
             System.out.println("TestFAILED");
         }
 
     }
 
+    @FindBy(how = How.XPATH, using = vacationpackge )
+    public WebElement vacationpackges;
+
+    public void vacationpackgem() {
+
+        if (vacationpackges .isDisplayed()) {
+            vacationpackges .click();
+        } else {
+            System.out.println("TestFAILED");
+        }
+
+    }
+/*
     public void excel() throws InterruptedException, IOException {
 
         // Excel location
@@ -401,7 +398,7 @@ try {
         }
     }
 
-
+*/
 
 
         // cucumber method
