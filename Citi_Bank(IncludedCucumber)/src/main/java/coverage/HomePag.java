@@ -22,7 +22,6 @@ import java.util.List;
 import java.util.Properties;
 
 import static coverage.WebElementCoverage.*;
-
 public class HomePag extends WebAPI {
 
     public static Connection connect = null;
@@ -37,42 +36,31 @@ public class HomePag extends WebAPI {
 
     @FindBy(how = How.XPATH, using = opeencreditCard )
     public WebElement CreditCard;
-
     public  void Clickcreeditcard() {
 
         CreditCard.click();
     }
-
     @FindBy(how = How.XPATH, using = viewcreditcard)
     public WebElement viewcreditcards;
-
     public void viewcards() {
-
 
         viewcreditcards.click();
     }
-
     @FindBy(how = How.XPATH, using = apr)
     public WebElement APRS;
-
     public void APRS() {
         String act = "0% Intro APR Credit Cards";
         String exp =APRS.getText();
         if (act == exp) {
-
-
             APRS.click();
             System.out.println("Test Passed ");
         }
             else{
                 System.out.println("Test Passed ");
             }
-
         }
-
     @FindBy(how = How.XPATH, using = balance)
     public WebElement balances;
-
     public void vbalances() {
 
         if ( balances.isEnabled()){
@@ -80,13 +68,9 @@ public class HomePag extends WebAPI {
        }else {
            System.out.println("Balance is not enabled");
        }
-
-
     }
-
     @FindBy(how = How.XPATH, using = cach)
     public WebElement Bankcach;
-
     public void Bankcach() {
 try {
     if (Bankcach.isDisplayed()) {
@@ -98,13 +82,9 @@ try {
 }catch (Exception e){
     System.out.println(e);
 }
-
     }
-
-
     @FindBy(how = How.XPATH, using = reward)
     public WebElement Bankreward;
-
     public void Bankreward() {
         String EXP ="Rewards Credit Cards";
         String validation = Bankreward.getText();
@@ -118,15 +98,9 @@ try {
                 System.out.println("Test failed");
                 break;
         }
-
-
-
-
     }
-
     @FindBy(how = How.XPATH, using = qualifieB)
     public WebElement qualifieS;
-
     public void qualifieS() {
 
         if ( qualifieS.isSelected()){
@@ -134,54 +108,35 @@ try {
         }else {
             System.out.println("qualifie is not enabled");
         }
-
-
     }
-
-
     @FindBy(how = How.XPATH, using = smallBusines)
     public WebElement smallBusinesm;
-
     public void smallBusinesm() {
 
         String tag = smallBusinesm.getTagName();
         for (int i = 0; i < 5; i++) {
             System.out.println("Print tag name 5 times"+ tag);
         }
-
     }
-
     @FindBy(how = How.XPATH, using = username)
     public WebElement enterusername;
-
     public void enterusername() {
 
         enterusername.sendKeys("MYUSERNAME");
-
     }
-
-
     @FindBy(how = How.XPATH, using = PW)
     public WebElement enterPW;
-
     public void enterPW() {
 
         enterPW.sendKeys("MYPW");
-
     }
-
     @FindBy(how = How.XPATH, using = Clicknext)
     public WebElement CLCIK_Clicknext;
-
     public void CLCIK_Clicknext() {
-
         CLCIK_Clicknext.click();
-
     }
-
     @FindBy(how = How.XPATH, using = forgetID)
     public WebElement forgetIDS;
-
     public void forgetIDS() {
 
         if (forgetIDS.isEnabled()){
@@ -189,14 +144,9 @@ try {
         }else {
             System.out.println("Testpassed");
         }
-
-
-
     }
-
     @FindBy(how = How.XPATH, using = ACIVECARD)
     public WebElement ACIVECARDlink;
-
     public void ACIVECARDlink() {
 
         if (ACIVECARDlink.isEnabled()) {
@@ -204,13 +154,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
-    /// ///////////////
     @FindBy(how = How.XPATH, using = forgetPW)
     public WebElement getforgetPW;
-
     public void getforgetPW() {
 
         if (getforgetPW.isDisplayed()) {
@@ -218,12 +164,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = REGISTERoNLINE)
     public WebElement checkREGISTERoNLINE;
-
     public void checkREGISTERoNLINE() {
 
         if (checkREGISTERoNLINE.isDisplayed()) {
@@ -231,12 +174,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = REMEBREid)
     public WebElement SELECTREMEBREid;
-
     public void SELECTREMEBREid() {
 
         if (SELECTREMEBREid.isDisplayed()) {
@@ -244,12 +184,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-//THIS
     @FindBy(how = How.XPATH, using = banking)
     public WebElement OPENbanking;
-
     public void OPENbanking() {
 
         if (OPENbanking.isDisplayed()) {
@@ -257,12 +194,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = bankingview)
     public WebElement OPENbankingview;
-
     public void OPENbankingview() {
 
         if (OPENbankingview.isDisplayed()) {
@@ -270,12 +204,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = checking)
     public WebElement OPENchecking;
-
     public void OPENchecking() {
 
         if (OPENchecking.isDisplayed()) {
@@ -285,10 +216,8 @@ try {
         }
 
     }
-
     @FindBy(how = How.XPATH, using = saving)
     public WebElement OPENsaving;
-
     public void OPENsaving() {
 
         if (OPENsaving.isDisplayed()) {
@@ -298,10 +227,8 @@ try {
         }
 
     }
-
     @FindBy(how = How.XPATH, using = certification)
     public WebElement OPENcertification;
-
     public void OPENcertification() {
 
         if (OPENcertification.isDisplayed()) {
@@ -309,9 +236,7 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     public void excel() throws InterruptedException, IOException {
 
         // Excel location
@@ -328,7 +253,7 @@ try {
         // CREATING INT VARIABLE TO SAVE ROWCOUNT
         int rowcount = sheet1.getLastRowNum();
         // PRINT TOTAL ROM
-      //  System.out.println("Total Row" + rowcount);
+        // System.out.println("Total Row" + rowcount);
         // LOOPING IN THE EXCEL SHEET
         for (int i = 0; i < rowcount + 1; i++) {
            // System.out.println(i);
@@ -340,18 +265,13 @@ try {
             cell2.setCellType(Cell.CELL_TYPE_STRING);
              data0 = cell1.getStringCellValue();
              data1 = cell2.getStringCellValue();
-
-
         }
 // PRINT CELL
         System.out.println("Test Data From Excel : " + data0);
         System.out.println("Test Data From Excel : " + data1);
         wb.close();
     }
-
-
 // SQL DB:
-
     public static Properties loadProperties() throws IOException {
         String path = "src\\secret.properties";
         Properties prop = new Properties();
@@ -360,7 +280,6 @@ try {
         ism.close();
         return prop;
     }
-
     public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
@@ -383,7 +302,6 @@ try {
 // Get the contents of userinfo table from DB
             ResultSet res = stmt.executeQuery(query);
 
-
 // Print the result untill all the records are printed
 // res.next() returns true if there is any next record else returns false
             while (res.next())
@@ -401,9 +319,6 @@ try {
         }
     }
 
-
-
-
         // cucumber method
     /*
         @When("User Navigate to LogIn Page")
@@ -414,7 +329,6 @@ try {
             System.out.println("TEST PASSED");
 
         }
-
      */
 
     }

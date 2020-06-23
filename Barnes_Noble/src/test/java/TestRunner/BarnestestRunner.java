@@ -15,15 +15,12 @@ public class BarnestestRunner extends WebAPI {
         // getLocalDriver("chrome","Windows");
         barnes= PageFactory.initElements(driver, HomePag.class);
     }
-
      @Test(priority = 0)
     public void gifthomeofficem()throws InterruptedException {
         initElement();
         Thread.sleep(200);
          barnes.gifthomeofficem();
     }
-
-
      @Test(priority = 1)
     public void browsem()  throws InterruptedException {
         initElement();
@@ -31,7 +28,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.browsem();
     }
-
     @Test(priority = 2)
     public void bestsellersm() throws InterruptedException {
         initElement();
@@ -39,7 +35,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.bestsellersm();
     }
-
     @Test(priority = 3)
     public void newarrivallsm()  throws InterruptedException {
         initElement();
@@ -47,7 +42,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.newarrivallsm();
     }
-
     @Test(priority = 4)
     public void  bngiftguidesm() throws InterruptedException {
         initElement();
@@ -55,7 +49,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.bngiftguidesm();
     }
-
     @Test(priority = 5)
     public void  babyboutiquesm() throws InterruptedException {
         initElement();
@@ -63,7 +56,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.babyboutiquesm();
     }
-
     @Test(priority = 6)
     public void thetrendshopm() throws InterruptedException {
         initElement();
@@ -71,7 +63,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.thetrendshopm();
     }
-
     @Test(priority = 7)
     public void weddingboutiquem() throws InterruptedException {
         initElement();
@@ -79,7 +70,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes. weddingboutiquem();
     }
-
     @Test(priority = 8)
     public void forherm() throws InterruptedException {
         initElement();
@@ -87,7 +77,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes. forherm();
     }
-
     @Test(priority = 9)
     public void forhimm()  throws InterruptedException {
         initElement();
@@ -95,7 +84,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(400);
         barnes. forhimm();
     }
-
     @Test(priority = 10)
     public void seeallm() throws InterruptedException {
         initElement();
@@ -103,7 +91,6 @@ public class BarnestestRunner extends WebAPI {
        Thread.sleep(400);
         barnes. seeallm();
     }
-
     @Test(priority = 11)
     public void artsuppliem() throws InterruptedException {
         initElement();
@@ -161,7 +148,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.journalm();
     }
-
     @Test(priority = 19)
     public void stationarym()throws InterruptedException {
         initElement();
@@ -169,7 +155,6 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(400);
         barnes.stationarym();
     }
-
     @Test(priority = 20)
     public void bnexclusivem()throws InterruptedException {
         initElement();
@@ -177,6 +162,5 @@ public class BarnestestRunner extends WebAPI {
         Thread.sleep(200);
         barnes.bnexclusivem();
     }
-
 
 }

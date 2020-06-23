@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 import static coverage.WebElementCoverage.*;
-
 //import sun.jvm.hotspot.utilities.Assert;
 
 public class HomePag extends WebAPI {
@@ -40,17 +39,13 @@ public class HomePag extends WebAPI {
         String title =browses.getText();
         System.out.println(title);
     }
-
     @FindBy(how = How.XPATH, using = bestsellers)
     public WebElement bestsellerss;
-
     public void bestsellersm() {
         String act = "xxxxx";
         String exp =bestsellerss.getText();
         System.out.println(exp);
         if (act == exp) {
-
-
             bestsellerss.click();
             System.out.println(" Test Passed ");
         }
@@ -59,22 +54,17 @@ public class HomePag extends WebAPI {
             }
 
         }
-
     @FindBy(how = How.XPATH, using = newarrivalls)
     public WebElement newarrivallss;
-
     public void newarrivallsm() {
-
         if (  newarrivallss.isEnabled()){
            System.out.println("newarrivalls is enabled");//
        }else {
            System.out.println("newarrivalls is not enabled");//
        }
     }
-
     @FindBy(how = How.XPATH, using =bngiftguide)
     public WebElement bngiftguides;
-
     public void bngiftguidesm() {
 try {
     if (bngiftguides.isDisplayed()) {
@@ -116,7 +106,6 @@ try {
     }
     @FindBy(how = How.XPATH, using = weddingboutique)
     public WebElement weddingboutiques;
-
     public void weddingboutiquem() {
 
         String tag = weddingboutiques.getTagName();
@@ -124,7 +113,6 @@ try {
             System.out.println("Print tag name 5 times"+ tag);
         }
     }
-
     @FindBy(how = How.XPATH, using = forher)
     public WebElement forhers;
 
@@ -158,7 +146,6 @@ try {
             System.out.println("Testfaild");
         }
     }
-
     @FindBy(how = How.XPATH, using = bagetote)
     public WebElement bagetotes;
     public void bagetotem() {
@@ -180,7 +167,6 @@ try {
             System.out.println("Test not passed");
         }
     }
-
     @FindBy(how = How.XPATH, using = christiangift)
     public WebElement christiangifts;
     public void christiangiftm() {
@@ -203,7 +189,6 @@ try {
     }
     @FindBy(how = How.XPATH, using =electronic)
     public WebElement electronics;
-
     public void electronicm() {
 
         if (electronics.isDisplayed()) {
@@ -224,10 +209,8 @@ try {
         }
 
     }
-
     @FindBy(how = How.XPATH, using = journal)
     public WebElement journals;
-
     public void journalm() {
 
         if (journals.isDisplayed()) {
@@ -237,10 +220,8 @@ try {
         }
 
     }
-
     @FindBy(how = How.XPATH, using = stationary )
     public WebElement stationarys;
-
     public void stationarym() {
 
         stationarys.getTagName();
@@ -249,14 +230,11 @@ try {
     }
     @FindBy(how = How.XPATH, using = bnexclusive )
     public WebElement bnexclusives;
-
     public void bnexclusivem() {
        String title=  bnexclusives.getText();
 
             System.out.println(title);
         }
-
-
 
 
     }

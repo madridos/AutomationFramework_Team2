@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 import static coverage.WebElementCoverage.*;
-
 //import sun.jvm.hotspot.utilities.Assert;
 
 public class HomePag extends WebAPI {
@@ -29,44 +28,32 @@ public class HomePag extends WebAPI {
 
     @FindBy(how = How.XPATH, using = myaccount )
     public WebElement myaccountS;
-
     public  void myaccountM() {
 
         myaccountS.click();
     }
-
     @FindBy(how = How.XPATH, using = login)
     public WebElement logins;
-
     public void loginm() {
-
-
         String title =logins.getText();
         System.out.println(title);
     }
-
     @FindBy(how = How.XPATH, using = register)
     public WebElement registers;
-
     public void registerm() {
         String act = "Military";
         String exp =registers.getText();
         System.out.println(exp);
         if (act == exp) {
-
-
             registers.click();
             System.out.println(" Test Passed ");
         }
             else{
                 System.out.println("Test Passed ");
             }
-
         }
-
     @FindBy(how = How.XPATH, using = exprpay)
     public WebElement exprpays;
-
     public void exprpaym() {
 
         if (  exprpays.isEnabled()){
@@ -74,15 +61,9 @@ public class HomePag extends WebAPI {
        }else {
            System.out.println("exprpay is not enabled");
        }
-
-
     }
-
-
-
     @FindBy(how = How.XPATH, using =autoID)
     public WebElement autoIDs;
-
     public void autoIDm() {
 try {
     if (autoIDs.isDisplayed()) {
@@ -94,13 +75,9 @@ try {
 }catch (Exception e){
     System.out.println(e);
 }
-
     }
-
-
     @FindBy(how = How.XPATH, using = BLOGIN)
     public WebElement BLOGINs;
-
     public void BLOGINm() {
         String EXP ="Rewards Credit Cards";
         String validation = BLOGINs.getText();
@@ -114,17 +91,9 @@ try {
                 System.out.println("Test failed");
                 break;
         }
-
-
-
-
     }
-
-
-
     @FindBy(how = How.XPATH, using = BREGISTER)
     public WebElement BREGISTERS;
-
     public void BREGISTERm() {
 
         if ( BREGISTERS.isSelected()){
@@ -132,55 +101,39 @@ try {
         }else {
             System.out.println("BREGISTERS is not enabled");
         }
-
-
     }
-
-
     @FindBy(how = How.XPATH, using = BEXPRESSPAY)
     public WebElement BEXPRESSPAYs;
-
     public void BEXPRESSPAYm() {
 
         String tag = BEXPRESSPAYs.getTagName();
         for (int i = 0; i < 5; i++) {
             System.out.println("Print tag name 5 times"+ tag);
         }
-
     }
-
     @FindBy(how = How.XPATH, using = bnlogin)
     public WebElement bnlogins;
-
     public void bnloginm() {
 
        bnlogins.click();
-
     }
-
-
     @FindBy(how = How.XPATH, using =  bnregister)
     public WebElement  bnregisters;
-
     public void  bnregisterm() {
 
        String title=  bnregisters.getText();
          System.out.println(title);
 
     }
-
     @FindBy(how = How.XPATH, using = emlogin)
     public WebElement emlogins;
-
     public void emloginm() {
 
      emlogins.click();
 
     }
-
     @FindBy(how = How.XPATH, using = emregister)
     public WebElement emregisters;
-
     public void emregisterm() {
 
         if (emregisters.isEnabled()){
@@ -188,14 +141,9 @@ try {
         }else {
             System.out.println("Testpassed");
         }
-
-
-
     }
-
     @FindBy(how = How.XPATH, using = collegesaving)
     public WebElement collegesavings;
-
     public void collegesavingm() {
 
         if (collegesavings.isEnabled()) {
@@ -203,13 +151,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
-    /// ///////////////
     @FindBy(how = How.XPATH, using = mfound)
     public WebElement mfounds;
-
     public void mfoundm() {
 
         if (mfounds.isDisplayed()) {
@@ -217,12 +161,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = safehaven)
     public WebElement safehavens;
-
     public void safehavenm() {
 
         if (safehavens.isDisplayed()) {
@@ -230,13 +171,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
-
     @FindBy(how = How.XPATH, using = ebusiness)
     public WebElement ebusinesss;
-
     public void ebusinessm() {
 
         if (ebusinesss.isDisplayed()) {
@@ -249,7 +186,6 @@ try {
 
     @FindBy(how = How.XPATH, using =boundone)
     public WebElement boundones;
-
     public void boundonem() {
 
         if (boundones.isDisplayed()) {

@@ -17,45 +17,41 @@ public class testruner extends WebAPI {
         cityBank= PageFactory.initElements(driver, HomePag.class);
     }
 
-   //// @Test(priority = 0)
+    @Test(priority = 0)
     public void opencreditCard() throws InterruptedException {
         initElement();
         Thread.sleep(200);
         cityBank.Clickcreeditcard();
     }
-    // @Test(priority = 0)
+    @Test(priority = 1)
     public void viewcreditCard() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
         Thread.sleep(200);
         cityBank.viewcards();
     }
-
-     //@Test(priority = 0)
+     @Test(priority = 2)
     public void aprs() throws InterruptedException {
-        initElement();
-        cityBank.Clickcreeditcard();
-        Thread.sleep(200);
-        cityBank.APRS();
-    }
-
-   // @Test(priority = 0)
+         initElement();
+         cityBank.Clickcreeditcard();
+         Thread.sleep(200);
+         cityBank.APRS();
+     }
+   @Test(priority = 3)
     public void vbalances() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
         Thread.sleep(200);
         cityBank.vbalances();
     }
-
-  //  @Test(priority = 0)
+  @Test(priority = 4)
     public void Bankcach() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
         Thread.sleep(200);
         cityBank.Bankcach();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 5)
     public void Bankreward() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
@@ -63,130 +59,103 @@ public class testruner extends WebAPI {
         cityBank.Bankreward();
     }
 
-  //  @Test(priority = 0)
+  @Test(priority = 6)
     public void qualifieS() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
         Thread.sleep(200);
         cityBank.qualifieS();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 7)
     public void smallBusinesm() throws InterruptedException {
         initElement();
         cityBank.Clickcreeditcard();
         Thread.sleep(200);
         cityBank.smallBusinesm();
     }
-// test from here----------------------------
-   // @Test(priority = 0)
+   @Test(priority = 8)
     public void enterusername() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.enterusername();
     }
-
-   //@Test(priority = 0)
+   @Test(priority = 9)
     public void enterPW() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.enterPW();
     }
-
-   // @Test(priority = 0)
+   @Test(priority = 10)
     public void CLCIK_Clicknext() throws InterruptedException {
         initElement();
-
         Thread.sleep(2000);
         cityBank.CLCIK_Clicknext();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 11)
     public void forgetIDS() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.forgetIDS();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 12)
     public void ACIVECARDlink() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.ACIVECARDlink();
     }
-
-
-
-    //@Test(priority = 0)
+    @Test(priority = 13)
     public void getforgetPW() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.getforgetPW();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 14)
     public void checkREGISTERoNLINE() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.checkREGISTERoNLINE();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 15)
     public void SELECTREMEBREid() throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.SELECTREMEBREid();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 16)
     public void OPENbanking()throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.OPENbanking();
     }
 
-    //@Test(priority = 0)
+    @Test(priority = 17)
     public void OPENbankingview()throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.OPENbanking();
         Thread.sleep(200);
         cityBank.OPENbankingview();
     }
-
-    @Test(priority = 0)
+    @Test(priority = 18)
     public void OPENchecking()throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.OPENbanking();
         Thread.sleep(200);
         cityBank.OPENchecking();
     }
-
-    //@Test(priority = 0)
+    @Test(priority = 19)
     public void OPENsaving()throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.OPENbanking();
         Thread.sleep(200);
         cityBank.OPENsaving();
     }
 
-    //@Test(priority = 0)
+    @Test(priority = 20)
     public void OPENcertification()throws InterruptedException {
         initElement();
-
         Thread.sleep(200);
         cityBank.OPENbanking();
         Thread.sleep(200);

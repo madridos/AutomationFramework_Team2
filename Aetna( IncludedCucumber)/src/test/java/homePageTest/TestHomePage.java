@@ -7,10 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-
 public class TestHomePage extends WebAPI {
-
-
 static HomePage homepage;
 
     @BeforeSuite
@@ -18,16 +15,12 @@ static HomePage homepage;
         // getLocalDriver("chrome","Windows");
          homepage= PageFactory.initElements(driver, HomePage.class);
     }
-
-
-
     @Test(priority=0)
     public void loginToaetna(){
         initElement();
         homepage.loginToaetna();
 
     }
-
     @Test(priority=1)
     public void Reisteraetna() throws InterruptedException {
         initElement();
@@ -36,7 +29,6 @@ static HomePage homepage;
         homepage.ClickReisteraetna();
 
     }
-
    @Test(priority=2)
     public void MemberIDaetna() throws InterruptedException {
 
@@ -47,134 +39,99 @@ static HomePage homepage;
         homepage.aetnaMemberID();
 
     }
-
-    //@Test
+    @Test(priority=3)
     public void aetnasearchBoxValidation() throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnasearchBox();
 
-
     }
-
-   // @Test
+    @Test(priority=4)
     public void aetnafindpharmacy () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnafindpharmacy();
 
-
     }
-
-   // @Test
+    @Test(priority=5)
     public void aetnashopPlans()  throws InterruptedException {
 
         initElement();
         Thread.sleep(2000);
         homepage.aetnashopPlans();
 
-
     }
-
-   // @Test
+    @Test(priority=6)
     public void aetnapharmacy()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnashopPlans();
         Thread.sleep(4000);
         homepage.aetnaphamacies();
 
-
     }
-
-  // @Test
+    @Test(priority=7)
     public void aetnaExploreSites()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
 
-
     }
-
-    //@Test
+    @Test(priority=8)
     public void Aetnasite()  throws InterruptedException {
-
         initElement();
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage.Aetnasite();
 
-
     }
-
-
-   // @Test
+    @Test(priority=9)
     public void aetnaAprovider()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage.aetnaAprovider();
 
-
     }
-
-   // @Test
+    @Test(priority=10)
     public void aetnaemployer()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage. aetnaemployer();
 
-
     }
-
-
-
-   // @Test
+    @Test(priority=11)
     public void aetnaeagent()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage.aetnaagent() ;
 
-
     }
-    //@Test
+    @Test(priority=12)
     public void aetnapartnersClick ()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage.aetnapartnersClick () ;
 
-
     }
-   // @Test
+    @Test(priority=13)
     public void aetnacareersClick ()  throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
         Thread.sleep(2000);
         homepage.aetnacareersClick () ;
 
-
     }
-
-   // @Test
+    @Test(priority=14)
     public void readaetnastoryClick () throws InterruptedException {
-
         initElement();
         Thread.sleep(4000);
         homepage.aetnaExploreSites();
@@ -183,11 +140,9 @@ static HomePage homepage;
         Thread.sleep(6000);
         homepage.readaetnastoryClick();
 
-
     }
-   // @Test
+    @Test(priority=15)
     public void resoursesClick () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
@@ -197,10 +152,8 @@ static HomePage homepage;
         homepage.resoursesClick ();
 
     }
-
-   // @Test
+    @Test(priority=16)
     public void resoursesacts () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
@@ -210,9 +163,8 @@ static HomePage homepage;
         homepage.resoursesfacts();
 
     }
-   //@Test
+    @Test(priority=17)
     public void resoursesproducts () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.aetnaExploreSites();
@@ -222,26 +174,19 @@ static HomePage homepage;
         homepage.resoursesproducts();
 
     }
-
-   // @Test
+    @Test(priority=18)
     public void eatnafeadback () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.eatnafeadback();
 
-
-
     }
-
-     @Test
+    @Test(priority=19)
     public void eatnaLogo () throws InterruptedException {
-
         initElement();
         Thread.sleep(2000);
         homepage.eatnaLogo();
 
-
-
     }
+
 }
