@@ -18,7 +18,7 @@
     <test name="Fox_News Home">
         <classes>
                         <class name="testFoxNewsHomePage.TestFoxHomePage"></class>
-            <!--            <class name="home.TestHomePage"/>-->
+                      <class name="testFoxNewsHomePage.TestFoxNewsBrokenLinks"/>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

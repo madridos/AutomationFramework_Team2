@@ -16,11 +16,11 @@ public static final String webElementAgreeAndContinue="//button[@class='_bss70td
 public static final String webElementContinue="//button[@class='_7sjucee']";
 public static final String webElementIllDoItLater="//button[@class='_1kuszuw']";
 public static final String webElementStartExploring="//span[@class='_h9njgv']";
-public static final String FName="ronaldo";
-public static final String LName="nicrisgo";
-public static final String BDTE="09021986";
-public static final String EADS="crisr78@gmail.com";
-public static final String PWRD="777cr7@Wk3qa";
+public static final String FName="ronalo";
+public static final String LName="nicrigo";
+public static final String BDTE="09021988";
+public static final String EADS="crisr18@gmail.com";
+public static final String PWRD="77grtr7@Wk3qa";
 }
 
 

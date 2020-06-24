@@ -104,46 +104,46 @@ public class TestLoginAirBnb extends WebAPI {
         getIniElement();
         loginAirBnb.searchAirbnbAustin();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testScrollDownToPhoenix(){
         getIniElement();
         loginAirBnb.scrollDownToPhoenix();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testClickPhoenix(){
         getIniElement();
         loginAirBnb.ClickPhoenix();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void teStsearchAirbnbPhoenix() throws InterruptedException {
         getIniElement();
         loginAirBnb.searchAirbnbPhoenix();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testscrollDownToWashingtonDc(){
         getIniElement();
         loginAirBnb.scrollDownToWashingtonDc();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testClickWashingtonDc(){
         getIniElement();
         loginAirBnb.ClickWashingtonDc();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testsearchAirbnbWashingtonDc() throws InterruptedException {
         getIniElement();
         loginAirBnb.searchAirbnbWashingtonDc();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testscrollDownToDenver(){
         getIniElement();loginAirBnb.scrollDownToDenver();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testClickDenver(){
         getIniElement();
         loginAirBnb.ClickDenver();
 }
-@Test(enabled = true)
+@Test(enabled = false)
     public void testsearchAirbnbDenver() throws InterruptedException {
         getIniElement();
         loginAirBnb.searchAirbnbDenver();

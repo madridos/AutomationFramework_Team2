@@ -76,7 +76,7 @@ public class TestFoxHomePage extends WebAPI {
         getInitElement();
         foxHomePage.clickOnListen();
     }
-    @Test(priority = 14,enabled = true)
+    @Test(priority = 14,enabled = false)
     public void testClickOnMore() throws InterruptedException {
         getInitElement();
         foxHomePage.clickOnMore();

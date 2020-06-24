@@ -20,7 +20,7 @@ public class TestDataProviderAirbnbSignUp extends WebAPI {
 @DataProvider
 
     public Object[][] getTestData() throws IOException, InvalidFormatException, IOException, InvalidFormatException {
-        Object data1 [][]= DataReader.fileReader3("oneSignUP");
+        Object data1 [][]= DataReader.fileReader3("newSignUP");
 
         return data1;
     }
