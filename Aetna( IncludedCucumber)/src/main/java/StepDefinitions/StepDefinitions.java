@@ -7,9 +7,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeSuite;
+
 import java.io.IOException;
 
-public class StepDefinition extends WebAPI {
+public class StepDefinitions extends WebAPI {
     static HomePage homepage;
 
     @BeforeSuite
@@ -17,24 +18,36 @@ public class StepDefinition extends WebAPI {
         // getLocalDriver("chrome","Windows");
         homepage= PageFactory.initElements(driver, HomePage.class);
     }
-    @Given("Online Experiences")
-    public void online_Experiences() throws IOException {
+
+    @Given("Clikc loginToaetna")
+    public void clikc_loginToaetna() throws IOException, InterruptedException {
         setUp(false ,"browserstack","windows","10","chrome","83","https://www.aetna.com/");
+
+
+
     }
-    @When("User Navigate to LogIn Page")
-    public void user_Navigate_to_LogIn_Page() throws InterruptedException {
+
+
+
+    @When("Click Reisteraetna")
+    public void click_Reisteraetna() throws InterruptedException {
         initElement();
         homepage.aetnaExploreSites();
-        homepage.Aetnasite();
+
+
     }
-    @When("User enters UserName and Password")
-    public void user_enters_UserName_and_Password() throws InterruptedException {
-        initElement();
+
+
+
+    @When("Click MemberIDaetna")
+    public void click_MemberIDaetna() {
         System.out.println("Test passed");
     }
-    @Then("Message displayed Login Successfully")
-    public void message_displayed_Login_Successfully() {
 
+
+
+    @Then("Clik aetnasearchBoxValidation")
+    public void clik_aetnasearchBoxValidation() {
         System.out.println("Test passed");
     }
 

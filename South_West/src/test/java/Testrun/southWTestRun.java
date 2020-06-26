@@ -8,24 +8,20 @@ import org.testng.annotations.Test;
 
 public class southWTestRun extends WebAPI {
 
-
     static HomePag SouthWest ;
-
 
     @BeforeSuite
     public void initElement(){
         // getLocalDriver("chrome","Windows");
         SouthWest= PageFactory.initElements(driver, HomePag.class);
     }
-
     @Test(priority = 0)
     public void vacationm() throws InterruptedException {
         initElement();
         Thread.sleep(200);
         SouthWest.vacationm();
     }
-
-
+    /*
      @Test(priority = 1)
     public void bookflightm() throws InterruptedException {
         initElement();
@@ -33,7 +29,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.bookflightm();
     }
-
      @Test(priority = 2)
     public void routemapm() throws InterruptedException {
         initElement();
@@ -41,7 +36,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.routemapm();
     }
-
     @Test(priority = 3)
     public void flightschedulem()throws InterruptedException {
         initElement();
@@ -49,7 +43,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.flightschedulem();
     }
-
      @Test(priority = 4)
     public void internationalTravelm()throws InterruptedException {
         initElement();
@@ -57,7 +50,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.internationalTravelm();
     }
-
     @Test(priority = 5)
     public void flightoffersm() throws InterruptedException {
         initElement();
@@ -65,7 +57,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.internationalTravelm();
     }
-
      @Test(priority = 6)
     public void  lowfarem()  throws InterruptedException {
         initElement();
@@ -73,7 +64,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.lowfarem() ;
     }
-
      @Test(priority = 7)
     public void upgradem()throws InterruptedException {
         initElement();
@@ -81,7 +71,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.upgradem() ;
     }
-
     @Test(priority = 8)
     public void bookhotelm() throws InterruptedException {
         initElement();
@@ -89,7 +78,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.bookhotelm() ;
     }
-
     @Test(priority = 9)
     public void morethanHotelm()throws InterruptedException {
 
@@ -98,7 +86,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.morethanHotelm() ;
     }
-
      @Test(priority = 10)
     public void managerreservationm() throws InterruptedException {
         initElement();
@@ -106,7 +93,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.managerreservationm() ;
     }
-
     @Test(priority = 11)
     public void hotelOfferm()throws InterruptedException {
         initElement();
@@ -114,7 +100,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.hotelOfferm() ;
     }
-
      @Test(priority = 12)
     public void baseratem() throws InterruptedException {
         initElement();
@@ -122,9 +107,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.baseratem() ;
     }
-
-
-
     @Test(priority = 13)
     public void rapidrewards() throws InterruptedException {
         initElement();
@@ -132,7 +114,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.rapidrewards() ;
     }
-
      @Test(priority = 14)
     public void whybookm() throws InterruptedException {
         initElement();
@@ -140,7 +121,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.whybookm() ;
     }
-
     @Test(priority = 15)
     public void scarentalm()throws InterruptedException {
         initElement();
@@ -148,7 +128,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.scarentalm() ;
     }
-
     @Test(priority = 16)
     public void managereservationm() throws InterruptedException {
         initElement();
@@ -156,7 +135,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.managereservationm() ;
     }
-
     @Test(priority = 17)
     public void caroffersm()throws InterruptedException {
         initElement();
@@ -164,7 +142,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.caroffersm() ;
     }
-
     @Test(priority = 18)
     public void bookvacationm() throws InterruptedException {
         initElement();
@@ -172,7 +149,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.bookvacationm()  ;
     }
-
     @Test(priority = 19)
     public void managervacationm()throws InterruptedException {
         initElement();
@@ -180,7 +156,6 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.managervacationm()  ;
     }
-
     @Test(priority = 20)
     public void vacationpackgem() throws InterruptedException {
         initElement();
@@ -188,6 +163,5 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.vacationpackgem()  ;
     }
-
-
+*/
 }

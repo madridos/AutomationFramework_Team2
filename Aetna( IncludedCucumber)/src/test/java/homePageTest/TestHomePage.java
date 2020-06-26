@@ -21,6 +21,7 @@ static HomePage homepage;
         homepage.loginToaetna();
 
     }
+
     @Test(priority=1)
     public void Reisteraetna() throws InterruptedException {
         initElement();

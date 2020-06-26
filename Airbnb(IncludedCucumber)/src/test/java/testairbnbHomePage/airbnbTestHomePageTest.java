@@ -18,27 +18,33 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest= PageFactory.initElements(driver, airbnbHomePag.class);
     }
 
-   @Test(priority = 0)
+   //@Test(priority = 0)
     public void clickOnlineExp() throws InterruptedException {
         initElement();
         Thread.sleep(200);
         airbnbtest.ClickonlineExpriaces();
     }
 
-  @Test(priority = 1)
+ @Test(priority = 1)
     public void clickdate() throws InterruptedException {
-        initElement();
-        Thread.sleep(200);
-        airbnbtest.ClickonlineExpriaces();
-        Thread.sleep(4000);
-        airbnbtest.Clickdate();
+      try {
+          initElement();
+          Thread.sleep(200);
+          airbnbtest.ClickonlineExpriaces();
+          Thread.sleep(4000);
+          airbnbtest.Clickdate();
+      }catch (Exception e){
+
+          System.out.println(e);
+      }
+
     }
    @Test(priority = 2)
     public void clickPrice() throws InterruptedException {
         initElement();
-        Thread.sleep(400);
+        Thread.sleep(600);
         airbnbtest.ClickonlineExpriaces();
-        Thread.sleep(4000);
+        Thread.sleep(6000);
 
         airbnbtest.ClickPrice();
     }
@@ -50,6 +56,7 @@ public class airbnbTestHomePageTest extends WebAPI {
         Thread.sleep(4000);
         airbnbtest.clickShareall();
     }
+
     @Test(priority = 4)
     public void Hostyourhome () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
 
@@ -62,7 +69,7 @@ public class airbnbTestHomePageTest extends WebAPI {
     }
 
   @Test(priority = 5)
-    public void PRICE () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
+    public void setprice () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         airbnbtest.connectToSqlDatabase();
         airbnbtest.queryDB();
 
@@ -75,6 +82,7 @@ public class airbnbTestHomePageTest extends WebAPI {
         airbnbtest.setEnterprice();
 
     }
+
    @Test(priority = 6)
     public void PRICEMAX () throws InterruptedException, SQLException, IOException, ClassNotFoundException {
         airbnbtest.connectToSqlDatabase();

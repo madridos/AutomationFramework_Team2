@@ -5,10 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions
+        //"C:\\Users\\mokraoui\\IdeaProjects\\ProJect\\AutomationFramework_Team2\\Aetna( IncludedCucumber)\\src\\Feature\\zak.feature"
         (
 
-                features="C:\\Users\\mokraoui\\IdeaProjects\\ProJect\\AutomationFramework_Team2\\Aetna\\src\\Feature\\airbnb2.feature",
-                glue="stepDefinition",
+                features="src/Feature/zak.feature",
+                glue="StepDefinitions",
                 dryRun=false,
                 monochrome=true,
                 plugin= {"pretty","html:test-ouput2"}

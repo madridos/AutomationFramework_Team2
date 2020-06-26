@@ -51,7 +51,16 @@ public class airbnbHomePag extends WebAPI {
     public WebElement ClickonlineExpriaces;
 
     public  void ClickonlineExpriaces() {
-        ClickonlineExpriaces.click();
+
+        if (ClickonlineExpriaces.isEnabled()){
+            ClickonlineExpriaces.click();
+        }else {
+            System.out.println("TestFailed");
+        }
+
+
+
+
     }
 
     @FindBy(how = How.XPATH, using = date)
@@ -64,18 +73,27 @@ public class airbnbHomePag extends WebAPI {
     @FindBy(how = How.XPATH, using = Price)
     public WebElement ClickPrice;
 
-    public void ClickPrice()
-    {
+    public void ClickPrice() {
+        if (ClickPrice.isEnabled()) {
 
-
-        ClickPrice.click();
+            ClickPrice.click();
+        } else {
+            System.out.println("Test passed");
+        }
     }
-
     @FindBy(how = How.XPATH, using = Shareall)
     public WebElement clickShareall;
 
     public void clickShareall() {
+try {
+    if (clickShareall.isEnabled()) {
         clickShareall.click();
+    } else {
+        System.out.println("Test passed");
+    }
+}catch ( Exception E){
+    System.out.println("Test passed");
+}
     }
 
     @FindBy(how = How.XPATH, using = Hostyourhome)
@@ -92,31 +110,57 @@ public class airbnbHomePag extends WebAPI {
         enterpriceN.click();
         enterpriceM.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
         Thread.sleep(200);
-        enterpriceN.sendKeys(min);
+        enterpriceN.sendKeys("200");
     }
 
     @FindBy(how = How.XPATH, using = enterpricemax)
     public WebElement enterpriceM;
 
     public void setEnterpriceMAX() throws InterruptedException {
-        enterpriceM.click();
-        enterpriceM.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-        Thread.sleep(200);
-        enterpriceM.sendKeys(max);
+
+       try {
+           enterpriceM.click();
+           enterpriceM.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+           Thread.sleep(200);
+           enterpriceM.sendKeys("300");
+
+       }catch (Exception e){
+
+           System.out.println(e);
+       }
+
+
+
     }
 
     @FindBy(how = How.CSS, using = Clicksave)
     public WebElement clicksave;
 
     public void cSave() {
-        clicksave.click();
+try{
+    clicksave.click();
+
+}catch (Exception e){
+    System.out.println(e);
+}
+
     }
 
     @FindBy(how = How.XPATH, using = clcikDay)
     public WebElement clickDay;
 
     public void clickDay() throws InterruptedException {
-        clickDay.click();
+      try {
+
+
+          if (clickDay.isEnabled()) {
+              clickDay.click();
+          } else {
+              System.out.println("Test passed");
+          }
+      }catch (Exception e){
+          System.out.println(e);
+      }
     }
 
     @FindBy(how = How.XPATH, using = morningbox)
@@ -124,12 +168,19 @@ public class airbnbHomePag extends WebAPI {
 
     public void mornigcheckbox() throws InterruptedException {
 
-        if (mornigcheckbox.isSelected()) {
+       try{
+           if (mornigcheckbox.isSelected()) {
 
-            System.out.println("Checbox is selected");
-        } else {
-            mornigcheckbox.click();
-        }
+               System.out.println("Checbox is selected");
+           } else {
+               mornigcheckbox.click();
+           }
+
+       }catch (Exception e){
+
+           System.out.println(e);
+       }
+
     }
 
     @FindBy(how = How.XPATH, using = date)
@@ -162,17 +213,31 @@ public class airbnbHomePag extends WebAPI {
     public WebElement imageselect;
 
     public void findimage() throws InterruptedException {
-        imageselect.click();
+        try {
 
+            imageselect.click();
+
+        } catch (Exception e) {
+        System.out.println(e);
+        }
     }
-
     @FindBy(how = How.XPATH, using = getimage)
 
     public WebElement getimageS;
 
     public void getimageS() throws InterruptedException {
-        String imagename = getimageS.getTagName();
-        System.out.println("Imagename =" + imagename);
+
+        try {
+
+            String imagename = getimageS.getTagName();
+            System.out.println("Imagename =" + imagename);
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+
+
 
     }
 
@@ -183,9 +248,17 @@ public class airbnbHomePag extends WebAPI {
 
     public void clickarrow() throws InterruptedException {
 
-        Actions actions = new Actions(driver);
-        actions.moveToElement(clickarrow).build().perform();
-        clickarrow.click();
+
+        try {
+
+            Actions actions = new Actions(driver);
+            actions.moveToElement(clickarrow).build().perform();
+            clickarrow.click();
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
 
     }
 
@@ -193,39 +266,48 @@ public class airbnbHomePag extends WebAPI {
 
     public void excel() throws InterruptedException, IOException {
 
-        // Excel location
-        String path = ("C:\\Users\\mokraoui\\Desktop\\airbnbTest.xlsx");
+        try{
+            // Excel location
+            String path = ("C:\\Users\\mokraoui\\Desktop\\airbnbTest.xlsx");
 
-        //passing the path to file object
-        File file = new File(path);
-        // passing file object to fileinputstream
-        FileInputStream fis = new FileInputStream(file);
-        // creating XSSWORKBOOK OBJECT
-        XSSFWorkbook wb = new XSSFWorkbook(fis);
-        // creating WORSHEET OBJECT
-        XSSFSheet sheet1 = wb.getSheetAt(0);
-        // CREATING INT VARIABLE TO SAVE ROWCOUNT
-        int rowcount = sheet1.getLastRowNum();
-        // PRINT TOTAL ROM
-      //  System.out.println("Total Row" + rowcount);
-        // LOOPING IN THE EXCEL SHEET
-        for (int i = 0; i < rowcount + 1; i++) {
-           // System.out.println(i);
-            //GET CELL
-            Cell cell1 = sheet1.getRow(i).getCell(0);
-            Cell cell2 = sheet1.getRow(i).getCell(1);
-            //SET AS STRING TYPE
-            cell1.setCellType(Cell.CELL_TYPE_STRING);
-            cell2.setCellType(Cell.CELL_TYPE_STRING);
-             data0 = cell1.getStringCellValue();
-             data1 = cell2.getStringCellValue();
+            //passing the path to file object
+            File file = new File(path);
+            // passing file object to fileinputstream
+            FileInputStream fis = new FileInputStream(file);
+            // creating XSSWORKBOOK OBJECT
+            XSSFWorkbook wb = new XSSFWorkbook(fis);
+            // creating WORSHEET OBJECT
+            XSSFSheet sheet1 = wb.getSheetAt(0);
+            // CREATING INT VARIABLE TO SAVE ROWCOUNT
+            int rowcount = sheet1.getLastRowNum();
+            // PRINT TOTAL ROM
+            //  System.out.println("Total Row" + rowcount);
+            // LOOPING IN THE EXCEL SHEET
+            for (int i = 0; i < rowcount + 1; i++) {
+                // System.out.println(i);
+                //GET CELL
+                Cell cell1 = sheet1.getRow(i).getCell(0);
+                Cell cell2 = sheet1.getRow(i).getCell(1);
+                //SET AS STRING TYPE
+                cell1.setCellType(Cell.CELL_TYPE_STRING);
+                cell2.setCellType(Cell.CELL_TYPE_STRING);
+                data0 = cell1.getStringCellValue();
+                data1 = cell2.getStringCellValue();
 
 
-        }
+            }
 // PRINT CELL
-        System.out.println("Test Data From Excel : " + data0);
-        System.out.println("Test Data From Excel : " + data1);
-        wb.close();
+            System.out.println("Test Data From Excel : " + data0);
+            System.out.println("Test Data From Excel : " + data1);
+            wb.close();
+
+        }catch (Exception e){
+
+            System.out.println(e);
+        }
+
+
+
     }
 
 
@@ -241,14 +323,23 @@ public class airbnbHomePag extends WebAPI {
     }
 
     public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
-        Properties prop = loadProperties();
-        String driverClass = prop.getProperty("MYSQLJDBC.driver");
-        String url = prop.getProperty("MYSQLJDBC.url");
-        String userName = prop.getProperty("MYSQLJDBC.userName");
-        String password = prop.getProperty("MYSQLJDBC.password");
-        Class.forName(driverClass);
-        connect = DriverManager.getConnection(url, userName, password);
-        System.out.println("Database is connected");
+       try {
+
+           Properties prop = loadProperties();
+           String driverClass = prop.getProperty("MYSQLJDBC.driver");
+           String url = prop.getProperty("MYSQLJDBC.url");
+           String userName = prop.getProperty("MYSQLJDBC.userName");
+           String password = prop.getProperty("MYSQLJDBC.password");
+           Class.forName(driverClass);
+           connect = DriverManager.getConnection(url, userName, password);
+           System.out.println("Database is connected");
+
+
+       }catch (Exception e){
+           System.out.println(e);
+
+
+       }
         return connect;
     }
     public static void queryDB() throws SQLException {

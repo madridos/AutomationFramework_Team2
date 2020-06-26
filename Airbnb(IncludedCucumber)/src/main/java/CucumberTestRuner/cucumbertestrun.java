@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions
         (
-                //String path ="C:\\Users\\mokraoui\\IdeaProjects\\ProJect\\AutomationFramework_Team2\\Airbnb\\src\\Feature\\airbnb2.feature";
-                features="C:\\Users\\mokraoui\\IdeaProjects\\ProJect\\AutomationFramework_Team2\\Airbnb\\src\\Feature\\airbnb2.feature",
+
+                features="C:\\Users\\mokraoui\\IdeaProjects\\ProJect\\AutomationFramework_Team2\\Airbnb(IncludedCucumber)\\src\\Feature\\airbnb2.feature",
                 glue="stepDefinition",
                 dryRun=false,
                 monochrome=true,

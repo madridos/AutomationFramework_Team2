@@ -17,7 +17,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford= PageFactory.initElements(driver, HomePag.class);
     }
 
-    // @Test(priority = 0)
+    @Test(priority = 0)
     public void myaccountM()throws InterruptedException {
         initElement();
         Thread.sleep(200);
@@ -25,7 +25,7 @@ public class hartfordTestrunner extends WebAPI {
     }
 
 
-    // @Test(priority = 1)
+    @Test(priority = 1)
     public void loginm() throws InterruptedException {
        initElement();
         Thread.sleep(400);
@@ -34,7 +34,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford.loginm();
     }
 
-     //@Test(priority = 2)
+    @Test(priority = 2)
     public void registerm() throws InterruptedException {
        initElement();
         Thread.sleep(400);
@@ -43,7 +43,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford.registerm();
     }
 
-    // @Test(priority = 3)
+    @Test(priority = 3)
     public void exprpaym()  throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -52,7 +52,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford.exprpaym();
     }
 
-      //@Test(priority = 4)
+    @Test(priority = 4)
     public void autoIDm() throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -60,8 +60,7 @@ public class hartfordTestrunner extends WebAPI {
         Thread.sleep(400);
         hartford. autoIDm();
     }
-//from here
-    @Test(priority = 0)
+    @Test(priority = 5)
     public void BLOGINm() throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -70,7 +69,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. BLOGINm() ;
     }
 
-    @Test(priority = 1)
+    @Test(priority = 6)
     public void BREGISTERm() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -79,7 +78,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. BREGISTERm() ;
     }
 
-     @Test(priority = 2)
+     @Test(priority = 7)
     public void BEXPRESSPAYm()  throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -88,7 +87,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. BEXPRESSPAYm() ;
     }
 
-    @Test(priority = 3)
+    @Test(priority = 8)
     public void bnloginm()  throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -97,7 +96,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. BEXPRESSPAYm() ;
     }
 
-    @Test(priority = 4)
+    @Test(priority = 9)
     public void bnregisterm()  throws InterruptedException {
 
          initElement();
@@ -107,7 +106,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. bnregisterm() ;
     }
 
-     @Test(priority = 5)
+     @Test(priority = 10)
     public void emloginm() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -116,7 +115,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. emloginm() ;
     }
 
-    @Test(priority = 6)
+    @Test(priority = 11)
     public void emregisterm() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -125,7 +124,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. emregisterm()  ;
     }
 
-     @Test(priority = 7)
+     @Test(priority = 12)
     public void collegesavingm() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -133,10 +132,7 @@ public class hartfordTestrunner extends WebAPI {
         Thread.sleep(400);
         hartford. collegesavingm()  ;
     }
-
-
-
-      @Test(priority = 8)
+    @Test(priority = 13)
     public void mfoundm() throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -145,7 +141,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. mfoundm()  ;
     }
 
-    @Test(priority = 9)
+    @Test(priority = 14)
     public void safehavenm() throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -154,7 +150,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. safehavenm()  ;
     }
 
-    @Test(priority = 10)
+    @Test(priority = 15)
     public void ebusinessm() throws InterruptedException {
          initElement();
         Thread.sleep(400);
@@ -163,7 +159,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. ebusinessm()  ;
     }
 
-    @Test(priority = 11)
+    @Test(priority = 16)
     public void boundonem() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -172,7 +168,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. boundonem()  ;
     }
 
-    @Test(priority = 12)
+    @Test(priority = 17)
     public void groupBfictm() throws InterruptedException {
        initElement();
         Thread.sleep(400);
@@ -181,7 +177,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. groupBfictm()  ;
     }
 
-    @Test(priority = 13)
+    @Test(priority = 18)
     public void RMISm() throws InterruptedException {
         initElement();
         Thread.sleep(400);
@@ -190,7 +186,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. RMISm()   ;
     }
 
-    @Test(priority = 14)
+    @Test(priority = 19)
     public void SERCHINPUTm()throws InterruptedException {
        initElement();
         Thread.sleep(400);
@@ -198,7 +194,7 @@ public class hartfordTestrunner extends WebAPI {
         hartford. SERCHINPUTm()  ;
     }
 
-    @Test(priority = 15)
+    @Test(priority = 20)
     public void PAGETITLEm()throws InterruptedException {
         initElement();
         Thread.sleep(400);

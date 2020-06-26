@@ -1,7 +1,7 @@
 # cucumber test
 Feature: navigate airbnb
 
-  Scenario: aetna open as expected
+    Scenario: aetna open as expected
     Given Online Experiences
     When User Navigate to LogIn Page
     And User enters UserName and Password

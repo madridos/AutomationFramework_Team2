@@ -34,39 +34,28 @@ public class HomePag extends WebAPI {
 
         vacations.click();
     }
-
     @FindBy(how = How.XPATH, using = bookflight)
     public WebElement bookflights;
-
     public void bookflightm() {
-
-
         String title= bookflights.getText();
         System.out.println(title);
     }
-
     @FindBy(how = How.XPATH, using = routemap)
     public WebElement routemaps;
-
     public void routemapm() {
         String act = "Military";
         String exp =routemaps.getText();
         System.out.println(exp);
         if (act == exp) {
-
-
             routemaps.click();
             System.out.println("zak Test Passed ");
         }
             else{
                 System.out.println("Test Passed ");
             }
-
         }
-
     @FindBy(how = How.XPATH, using = flightschedule)
     public WebElement flightschedules;
-
     public void flightschedulem() {
 
         if ( flightschedules.isEnabled()){
@@ -74,15 +63,9 @@ public class HomePag extends WebAPI {
        }else {
            System.out.println("beducation is not enabled");
        }
-
-
     }
-
-
-
     @FindBy(how = How.XPATH, using = internationalTravel)
     public WebElement internationalTravels;
-
     public void internationalTravelm() {
 try {
     if (internationalTravels.isDisplayed()) {
@@ -94,13 +77,9 @@ try {
 }catch (Exception e){
     System.out.println(e);
 }
-
     }
-
-
     @FindBy(how = How.XPATH, using = flightoffers)
     public WebElement flightofferss;
-
     public void flightoffersm() {
         String EXP ="  chnageme";
         String validation = flightofferss.getText();
@@ -114,15 +93,10 @@ try {
                 System.out.println("Test failed");
                 break;
         }
-
-
-
-
     }
 
     @FindBy(how = How.XPATH, using = lowfare)
     public WebElement lowfareS;
-
     public void lowfarem() {
 
         if ( lowfareS.isSelected()){
@@ -130,54 +104,36 @@ try {
         }else {
             System.out.println("economyS is not enabled");
         }
-
-
     }
-
-
     @FindBy(how = How.XPATH, using = upgrade)
     public WebElement upgrades;
-
     public void upgradem() {
 
         String tag = upgrades.getTagName();
         for (int i = 0; i < 5; i++) {
             System.out.println("Print tag name 5 times"+ tag);
         }
-
     }
-
     @FindBy(how = How.XPATH, using = bookhotel)
     public WebElement bookhotels;
-
     public void bookhotelm() {
 
         bookhotels.click();
-
     }
-
-
     @FindBy(how = How.XPATH, using = morethanHotel)
     public WebElement morethanHotels;
-
     public void morethanHotelm() {
 
         morethanHotels.click();
-
     }
-
     @FindBy(how = How.XPATH, using = managerreservation)
     public WebElement managerreservations;
-
     public void managerreservationm() {
 
         managerreservations.click();
-
     }
-
     @FindBy(how = How.XPATH, using = hotelOffer)
     public WebElement hotelOffers;
-
     public void hotelOfferm() {
 
         if (hotelOffers.isEnabled()){
@@ -185,14 +141,9 @@ try {
         }else {
             System.out.println("Testpassed");
         }
-
-
-
     }
-
     @FindBy(how = How.XPATH, using = baserate)
     public WebElement baserates;
-
     public void baseratem() {
 
         if (baserates.isEnabled()) {
@@ -200,13 +151,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
-
     @FindBy(how = How.XPATH, using = rapidreward)
     public WebElement rapidrewards;
-
     public void rapidrewards() {
 
         if (rapidrewards.isDisplayed()) {
@@ -214,12 +161,9 @@ try {
         } else {
             System.out.println("Testpassed");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = whybook)
     public WebElement whybooks;
-
     public void whybookm() {
 
         if (whybooks.isDisplayed()) {
@@ -227,13 +171,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
-
     @FindBy(how = How.XPATH, using = scarental)
     public WebElement scarentals;
-
     public void scarentalm() {
 
         if (scarentals.isDisplayed()) {
@@ -241,12 +181,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using =managereservation)
     public WebElement managereservations;
-
     public void managereservationm() {
 
         if (managereservations.isDisplayed()) {
@@ -254,12 +191,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = caroffers)
     public WebElement carofferss;
-
     public void caroffersm() {
 
         if (carofferss.isDisplayed()) {
@@ -267,12 +201,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = bookvacation)
     public WebElement bookvacations;
-
     public void bookvacationm() {
 
         if (bookvacations.isDisplayed()) {
@@ -280,12 +211,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = managervacation)
     public WebElement managervacations;
-
     public void managervacationm() {
 
         if (managervacations.isDisplayed()) {
@@ -293,12 +221,9 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
-
     @FindBy(how = How.XPATH, using = vacationpackge )
     public WebElement vacationpackges;
-
     public void vacationpackgem() {
 
         if (vacationpackges .isDisplayed()) {
@@ -306,7 +231,6 @@ try {
         } else {
             System.out.println("TestFAILED");
         }
-
     }
 /*
     public void excel() throws InterruptedException, IOException {
@@ -337,8 +261,6 @@ try {
             cell2.setCellType(Cell.CELL_TYPE_STRING);
              data0 = cell1.getStringCellValue();
              data1 = cell2.getStringCellValue();
-
-
         }
 // PRINT CELL
         System.out.println("Test Data From Excel : " + data0);
@@ -346,9 +268,7 @@ try {
         wb.close();
     }
 
-
 // SQL DB:
-
     public static Properties loadProperties() throws IOException {
         String path = "src\\secret.properties";
         Properties prop = new Properties();
@@ -357,7 +277,6 @@ try {
         ism.close();
         return prop;
     }
-
     public static Connection connectToSqlDatabase() throws IOException, SQLException, ClassNotFoundException {
         Properties prop = loadProperties();
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
@@ -399,8 +318,6 @@ try {
     }
 
 */
-
-
         // cucumber method
     /*
         @When("User Navigate to LogIn Page")
