@@ -15,7 +15,9 @@ public class TwitterAPIClient {
     protected String baseUri;
 
     public TwitterAPIClient() {
-        this.baseUri = "https://api.twitter.com/1.1";
+       this.baseUri = "https://api.twitter.com/1.1";
+        //this.baseUri ="https://twitter.com";
+
         this.properties=new Properties();
         inputStream=null;
        try {
