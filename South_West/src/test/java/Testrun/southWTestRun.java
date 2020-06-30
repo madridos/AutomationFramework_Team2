@@ -21,7 +21,7 @@ public class southWTestRun extends WebAPI {
         Thread.sleep(200);
         SouthWest.vacationm();
     }
-    /*
+
      @Test(priority = 1)
     public void bookflightm() throws InterruptedException {
         initElement();
@@ -163,5 +163,5 @@ public class southWTestRun extends WebAPI {
         SouthWest.vacationm();
         SouthWest.vacationpackgem()  ;
     }
-*/
+
 }
