@@ -28,8 +28,7 @@
 
     </properties>
 
-    <dependencyManagement>
-
+<dependencyManagement>
         <dependencies>
 
             <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -114,9 +113,7 @@
 
 
         </dependencies>
-
-
-    </dependencyManagement>
+</dependencyManagement>
 
     <build>
 

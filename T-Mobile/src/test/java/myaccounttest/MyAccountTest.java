@@ -1,83 +1,59 @@
 package myaccounttest;
 
 import common.WebAPI;
-import myaccount.MyAccountPage;
+import myAccount.MyTmobilePage;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class MyAccountTest extends WebAPI {
-    MyAccountPage cartBn;
-
-    public void initElements(){
-
-        cartBn= PageFactory.initElements(driver,MyAccountPage.class);
+    MyTmobilePage cartBn;
+    public void initElements() {
+        cartBn = PageFactory.initElements(driver, MyTmobilePage.class);
     }
-    @Test(priority=1)
-    public void btnMyAccountTest(){
+    @BeforeMethod
+    public void accountBnt(){
         initElements();
         cartBn.validateMyAccountBtn();
-
     }
-    @Test(priority=2)
-    public void myLoginButton()   {
-        initElements();
-        cartBn.validateMyAccountBtn();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    @Test(priority = 1)
+    public void myLoginButton(){
         cartBn.validateLoginButton();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
-    @Test(priority=3)
-    public void myPhoneNumber(){
-        initElements();
-        cartBn.validateMyAccountBtn();
+    @Test(priority = 2)
+    public void myPhoneNumber() {
         cartBn.validateLoginButton();
         cartBn.enterPhoneOrEmail();
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    }
+    @Test(priority = 3)
+    public void myBillPay()  {
+        cartBn.setBillPay();
+    }
+    @Test(priority = 4)
+    public void addLine() {
+        cartBn.setAddALine();
+    }
+    @Test(priority = 6)
+    public void doUpgradeTest(){
+        cartBn.doUpgrade();
+    }
+    @Test(priority = 7)
+    public void setOrderStatusTest() {
+        cartBn.setOrderStatus();
+    }
+    @Test(priority = 8)
+    public void setAskCommunityTest() {
+        cartBn.setAskCommunity();
+    }
+     @Test(priority = 9)
+    public void emailRaioBoxTest() {
+        initElements();
+        cartBn.validateMyAccountBtn();
+        }
+    @Test(priority = 10)
+        public void setPayAsGuestTest (){
+         cartBn.clickNext();
+         cartBn.clickForgotPassword();
         }
 
     }
-    @Test(priority=4)
-    public void myBillPay(){
-        initElements();
-        cartBn.validateMyAccountBtn();
-        cartBn.setBillPay();
-
-    }
-    @Test(priority=5)
-    public void addLine(){
-        initElements();
-        cartBn.validateMyAccountBtn();
-        cartBn.setAddALine();
-
-    }
-    @Test(priority=5)
-    public void doUpgradeTest(){
-        initElements();
-        cartBn.validateMyAccountBtn();
-        cartBn.doUpgrade();
-    }
-    @Test(priority =6)
-    public void setOrderStatusTest(){
-        initElements();
-        cartBn.validateMyAccountBtn();
-        cartBn.setOrderStatus();
-    }
-    @Test(priority =7)
-    public void setAskCommunityTest(){
-        initElements();
-        cartBn.validateMyAccountBtn();
-        cartBn.setAskCommunity();
-
-    }
-}

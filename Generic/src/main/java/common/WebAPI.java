@@ -121,8 +121,8 @@ public class WebAPI {
         } else {
             getLocalDriver(os, browserName);
         }
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
     }
@@ -191,7 +191,7 @@ public class WebAPI {
     @AfterMethod(alwaysRun = true)
     public void cleanUp() {
         driver.close();
-       driver.quit();
+        driver.quit();
     }
 
     //helper methods
@@ -421,7 +421,7 @@ public class WebAPI {
         return items;
     }
 
-    public void selectOptionByVisibleText(WebElement element, String value) {
+    public void     selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
