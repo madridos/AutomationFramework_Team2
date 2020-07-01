@@ -16,7 +16,7 @@ public class MyTests extends WebAPI {
         elements();
         foxnews.seeWorldNews();
     }
-  //  @Test(priority=1)
+    @Test(priority=1)
     public void viewImageTest(){
         foxnews.viewImage();
     }
@@ -24,5 +24,9 @@ public class MyTests extends WebAPI {
     public void viewLinkTest(){
         foxnews.viewImage();
         foxnews.viewLink1();
+//     @Test (priority=3)
+//     public  void  tryMethod(){
+//
+//        }
     }
 }
