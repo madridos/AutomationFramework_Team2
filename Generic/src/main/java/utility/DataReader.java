@@ -5,12 +5,14 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class DataReader {
     HSSFWorkbook wb = null;
@@ -63,18 +65,23 @@ public class DataReader {
 
     public String getCellValue(HSSFCell cell) {
         Object value = null;
+       // ArrayList data = new ArrayList();
+        int  dataType = cell.getCellType();
 
-        int dataType = cell.getCellType();
         switch (dataType) {
+
             case HSSFCell.CELL_TYPE_NUMERIC:
                 value = cell.getNumericCellValue();
                 break;
-            case HSSFCell.CELL_TYPE_STRING:
-                value = cell.getStringCellValue();
+           case HSSFCell.CELL_TYPE_STRING:
+                   value = cell.getNumericCellValue();
                 break;
-            case HSSFCell.CELL_TYPE_BOOLEAN:
-                value = cell.getBooleanCellValue();
+           case HSSFCell.CELL_TYPE_BOOLEAN:
+                   value = cell.getBooleanCellValue();
                 break;
+
+
+
         }
         return value.toString();
 

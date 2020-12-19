@@ -101,8 +101,8 @@ public class WebAPI {
 
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username = "";
-    public String browserstack_accesskey = "";
+    public String browserstack_username = "fouadsidisaid1";
+    public String browserstack_accesskey = "iGAQnW8xqCBJj6sRFV4L";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
@@ -133,7 +133,8 @@ public class WebAPI {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "./Generic/BrowserDriver/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "..\\Generic\\BrowserDriver\\windows\\chromedriver.exe");
+               // System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("chrome-options")) {
@@ -143,6 +144,7 @@ public class WebAPI {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+                //System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -188,10 +190,10 @@ public class WebAPI {
         return driver;
     }
 
-    @AfterMethod(alwaysRun = true)
+   @AfterMethod(alwaysRun = true)
     public void cleanUp() {
-        driver.close();
-        driver.quit();
+       driver.close();
+       driver.quit();
     }
 
     //helper methods
