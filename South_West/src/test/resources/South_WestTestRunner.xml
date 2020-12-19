@@ -17,7 +17,7 @@
 
     <test name="South_West Home">
         <classes>
-            <!--            <class name="testHome.TestHomePage"></class>-->
+                        <class name="myAccountRunner.MyAccountTests"></class>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
@@ -26,7 +27,6 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="83"/>
     <parameter name="url" value="https://www.t-mobile.com/"/>
-
 
     <test name="T-MobilContact">
         <classes>

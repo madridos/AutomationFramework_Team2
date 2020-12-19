@@ -17,7 +17,7 @@
 
     <test name="Barnes_Noble Home">
         <classes>
-<!--            <class name="testHome.TestHomePage"></class>-->
+            <class name="myAccountRunner.MyTests"></class>
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
             <!--            <class name="home.TestHomePage"/>-->
